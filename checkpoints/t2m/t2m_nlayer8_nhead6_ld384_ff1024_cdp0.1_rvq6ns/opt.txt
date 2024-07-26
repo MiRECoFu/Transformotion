@@ -1,0 +1,30 @@
+------------ Options -------------
+batch_size: 64
+checkpoints_dir: ./checkpoints
+cond_drop_prob: 0.1
+dataset_name: t2m
+dropout: 0.2
+eval_every_e: 10
+ff_size: 1024
+force_mask: False
+gamma: 0.1
+gpu_id: -1
+gumbel_sample: False
+is_continue: False
+is_train: True
+latent_dim: 384
+log_every: 50
+lr: 0.0002
+max_epoch: 500
+max_motion_length: 196
+milestones: [50000]
+n_heads: 6
+n_layers: 8
+name: t2m_nlayer8_nhead6_ld384_ff1024_cdp0.1_rvq6ns
+save_latest: 500
+seed: 3407
+share_weight: False
+unit_length: 4
+vq_name: rvq_nq1_dc512_nc512
+warm_up_iter: 2000
+-------------- End ----------------

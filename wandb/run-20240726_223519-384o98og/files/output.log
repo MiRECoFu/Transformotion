@@ -1,0 +1,99 @@
+Load model epoch:21 iterations:8426
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+motion motion_ids ========================+> tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+ labels====> tensor([[691, 985, 789, 691, 691, 691, 691, 691, 798, 798, 874, 874, 874, 874,
+         620, 620, 620, 620, 874, 874, 874, 874, 988, 988, 988, 108, 947, 800,
+         350, 350, 350, 350, 350, 350, 350, 350, 350, 638, 350, 638, 638, 638,
+         638, 638, 638, 638, 638, 638, 763, 763, 763, 763, 763, 763, 763, 763,
+         763, 763, 763, 763, 763, 763, 763, 406, 406, 406, 406, 406, 406, 406,
+         406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406,
+         406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406,
+         763, 763, 763, 763, 763, 406, 763, 763, 393, 763, 763, 763, 763, 800,
+         800, 800, 228, 228, 228, 228,  29,  36, 691, 954, 954, 954, 954, 463,
+         874, 874, 874, 976, 286, 286, 286, 620, 620, 874, 874, 874, 874, 691,
+          29, 719,  29, 691, 613,  36,  36,  36,  29, 217, 954,  29,  29, 789,
+         789, 954, 691, 691, 691, 798, 798, 798, 874, 620, 620, 309, 309, 620,
+         620, 463, 691, 719, 730, 730,  29, 988, 638, 638, 108, 638, 638, 638,
+         350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350]],
+       device='cuda:0')
+motion motion_ids ========================+> tensor([[735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 151, 325, 693, 693,  35, 394,   6, 139, 139, 955]],
+       device='cuda:0')
+ labels====> tensor([[136, 217, 217, 202, 202, 202, 202, 202,  29, 202, 843, 972, 972, 972,
+         972, 972, 972, 972, 972, 972, 947, 947, 947, 947, 947, 947, 972, 972,
+         972, 972, 972, 972, 972, 972, 972, 972, 972, 972, 972, 972, 972, 972,
+         972, 972, 972, 947, 947, 947, 947, 947, 947, 947, 947, 947, 947, 947,
+         947, 972, 972, 972, 972, 972, 972, 972, 972, 972, 972, 972, 972, 972,
+         202, 202, 217, 217, 217, 217, 217, 217, 710, 710, 691, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996]],
+       device='cuda:0')
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 611, in evaluation_transformer
+    pred_pose = trans.generate(clip_text[k:k+1], m_length, motion_ids[k:k+1])
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/tools.py", line 42, in inner
+    out = fn(model, *args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 280, in generate
+    logits, mems = self.forward(prompt_texts, generated, m_lens, labels=None, mems=None, is_generating=True)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 198, in forward
+    ret, pred_hid = self.seqTransDecoderXL(is_generating, prompt_logits.unsqueeze(0), motion_ids.permute(1, 0), labels.permute(1, 0), *mems)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 620, in forward
+    hidden, new_mems = self._forward(is_generate, cond_emb, data, mems=mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 591, in _forward
+    self.r_r_bias, dec_attn_mask=dec_attn_mask, mems=mems_i)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 417, in forward
+    mems=mems)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 186, in forward
+    BD = self._rel_shift(BD)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 76, in _rel_shift
+    x_padded = torch.cat([zero_pad, x], dim=1)
+KeyboardInterrupt

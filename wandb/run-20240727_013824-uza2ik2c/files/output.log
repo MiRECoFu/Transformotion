@@ -1,0 +1,87 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+motion motion_ids ========================+> tensor([[ 897,  929,  370,  ...,  613,  958,  848],
+        [  24,  143,  424,  ...,  913,  555,  276],
+        [  79,  239,  857,  ...,  819,  613,  965],
+        ...,
+        [ 927,  715,  461,  ...,  169,  279,  286],
+        [ 695,  790,  110,  ...,  904,  475,  749],
+        [ 692,  249,   36,  ..., 1003,  290,   56]], device='cuda:0')
+ labels====> tensor([[  13,   13,   13,  ...,  996,  996,  996],
+        [ 309,  286,  874,  ...,  310,  455,  378],
+        [ 912,  217,  217,  ...,  996,  996,  996],
+        ...,
+        [  64,   64,   93,  ...,  996,  996,  996],
+        [1009,   87,  612,  ...,  384,  323,  931],
+        [ 719,  719,  719,  ...,  996,  996,  996]], device='cuda:0')
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+--> 	 Eva. Ep 0 :, FID. 66.8567, Diversity Real. 15.6263, Diversity. 2.0697, R_precision_real. [0.015625 0.046875 0.046875], R_precision. [0.       0.       0.015625], matching_score_real. 9.04236888885498, matching_score_pred. 8.849748611450195
+--> --> 	 FID Improved from 100.00000 to 66.85669 !!!
+--> --> 	 matching_score Improved from 100.00000 to 8.84975 !!!
+--> --> 	 Diversity Improved from 100.00000 to 2.06972 !!!
+--> --> 	 Top3 Improved from 0.0000 to 0.0156 !!!
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it: 0-  49 niter:    50  1m 6s (- 25494m 50s) completed:  0%) loss: 4.8048  acc: 0.1532  lr: 0.0002
+ep/it: 0-  99 niter:   100  1m 36s (- 18426m 33s) completed:  0%) loss: 2.7282  acc: 0.3918  lr: 0.0002
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f569081ed40>
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1203, in __del__
+    self._shutdown_workers()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1177, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/process.py", line 140, in join
+    res = self._popen.wait(timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/popen_fork.py", line 45, in wait
+    if not wait([self.sentinel], timeout):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/connection.py", line 921, in wait
+    ready = selector.select(timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 166, in train
+    loss, acc = self.update(batch_data=batch, mems=mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 99, in update
+    loss, acc = self.forward(batch_data, mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 93, in forward
+    ce_loss, acc, pred_id, output, logits, mems = self.transformotion(captions, code_idx[..., 0], m_lens, mems=mems)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 200, in forward
+    mems=tuple()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 621, in forward
+    hidden, new_mems = self._forward(is_generate, cond_emb, data, mems=mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 592, in _forward
+    self.r_r_bias, dec_attn_mask=dec_attn_mask, mems=mems_i)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 418, in forward
+    mems=mems)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 214, in forward
+    attn_out = self.drop(attn_out)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/dropout.py", line 58, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/functional.py", line 983, in dropout
+    else _VF.dropout(input, p, training))
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/traceback.py", line 197, in format_stack
+    return format_list(extract_stack(f, limit=limit))
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/traceback.py", line 359, in extract
+    linecache.checkcache(filename)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/linecache.py", line 74, in checkcache
+    stat = os.stat(fullname)
+KeyboardInterrupt

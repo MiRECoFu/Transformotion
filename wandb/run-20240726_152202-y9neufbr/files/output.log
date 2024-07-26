@@ -1,0 +1,10 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+TypeError: evaluation_transformer() got an unexpected keyword argument 'save_ckpt'

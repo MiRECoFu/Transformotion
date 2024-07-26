@@ -1,0 +1,169 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+motion motion_ids ========================+> tensor([[ 897,  929,  370,  ...,  613,  958,  848],
+        [  24,  143,  424,  ...,  913,  555,  276],
+        [  79,  239,  857,  ...,  819,  613,  965],
+        ...,
+        [ 927,  715,  461,  ...,  169,  279,  286],
+        [ 695,  790,  110,  ...,  904,  475,  749],
+        [ 692,  249,   36,  ..., 1003,  290,   56]], device='cuda:0')
+ labels====> tensor([[  13,   13,   13,  ...,  996,  996,  996],
+        [ 309,  286,  874,  ...,  310,  455,  378],
+        [ 912,  217,  217,  ...,  996,  996,  996],
+        ...,
+        [  64,   64,   93,  ...,  996,  996,  996],
+        [1009,   87,  612,  ...,  384,  323,  931],
+        [ 719,  719,  719,  ...,  996,  996,  996]], device='cuda:0')
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+--> 	 Eva. Ep 0 :, FID. 66.8567, Diversity Real. 15.6263, Diversity. 2.0697, R_precision_real. [0.015625 0.046875 0.046875], R_precision. [0.       0.       0.015625], matching_score_real. 9.04236888885498, matching_score_pred. 8.849748611450195
+--> --> 	 FID Improved from 100.00000 to 66.85669 !!!
+--> --> 	 matching_score Improved from 100.00000 to 8.84975 !!!
+--> --> 	 Diversity Improved from 100.00000 to 2.06972 !!!
+--> --> 	 Top3 Improved from 0.0000 to 0.0156 !!!
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it: 0-  49 niter:    50  1m 6s (- 25280m 38s) completed:  0%) loss: 4.8048  acc: 0.1532  lr: 0.0002
+ep/it: 0-  99 niter:   100  1m 36s (- 18498m 47s) completed:  0%) loss: 2.7282  acc: 0.3918  lr: 0.0002
+ep/it: 0- 149 niter:   150  2m 7s (- 16277m 9s) completed:  0%) loss: 2.1961  acc: 0.4666  lr: 0.0002
+ep/it: 0- 199 niter:   200  2m 38s (- 15133m 16s) completed:  0%) loss: 1.9454  acc: 0.5128  lr: 0.0002
+ep/it: 0- 249 niter:   250  3m 9s (- 14522m 13s) completed:  0%) loss: 1.8104  acc: 0.5396  lr: 0.0002
+ep/it: 0- 299 niter:   300  3m 41s (- 14104m 36s) completed:  0%) loss: 1.7014  acc: 0.5632  lr: 0.0002
+ep/it: 0- 349 niter:   350  4m 12s (- 13808m 20s) completed:  0%) loss: 1.6765  acc: 0.5672  lr: 0.0002
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+motion motion_ids ========================+> tensor([[ 136,  136,  136,  ...,  931,  931,  931],
+        [ 522,  432,  432,  ...,  395,  395,  395],
+        [ 208,  208,  208,  ...,  208,  208,  208],
+        ...,
+        [ 110,  110,  110,  ...,  542,  542,  542],
+        [ 883,  883,  883,  ...,  912,  912,  912],
+        [1009, 1009, 1009,  ...,  706,  706,  706]], device='cuda:0')
+ labels====> tensor([[139, 289, 869,  ..., 293, 329, 967],
+        [382, 668, 197,  ..., 354, 354, 971],
+        [159,  63,  63,  ..., 658, 484, 959],
+        ...,
+        [ 28,  28,  28,  ...,  28,  28,  28],
+        [768, 276, 768,  ..., 611, 611, 611],
+        [798, 798, 874,  ..., 217, 159, 217]], device='cuda:0')
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+--> 	 Eva. Ep 1 :, FID. 21.4711, Diversity Real. 14.0583, Diversity. 4.8019, R_precision_real. [0.015625 0.015625 0.03125 ], R_precision. [0.015625 0.03125  0.046875], matching_score_real. 9.070615768432617, matching_score_pred. 7.9208807945251465
+--> --> 	 FID Improved from 66.85669 to 21.47109 !!!
+--> --> 	 matching_score Improved from 8.84975 to 7.92088 !!!
+--> --> 	 Diversity Improved from 2.06972 to 4.80188 !!!
+--> --> 	 Top1 Improved from 0.0000 to 0.0156 !!!
+--> --> 	 Top2 Improved from 0.0000 to 0.0312 !!!
+--> --> 	 Top3 Improved from 0.0156 to 0.0469 !!!
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it: 1-  16 niter:   400  5m 23s (- 15489m 27s) completed:  0%) loss: 1.6388  acc: 0.5779  lr: 0.0002
+ep/it: 1-  66 niter:   450  5m 54s (- 15084m 50s) completed:  0%) loss: 1.5837  acc: 0.5892  lr: 0.0002
+ep/it: 1- 116 niter:   500  6m 25s (- 14760m 58s) completed:  0%) loss: 1.5366  acc: 0.5981  lr: 0.0002
+ep/it: 1- 166 niter:   550  6m 59s (- 14616m 24s) completed:  0%) loss: 1.5229  acc: 0.6017  lr: 0.0002
+ep/it: 1- 216 niter:   600  7m 30s (- 14383m 32s) completed:  0%) loss: 1.5220  acc: 0.5989  lr: 0.0002
+ep/it: 1- 266 niter:   650  8m 1s (- 14190m 1s) completed:  0%) loss: 1.5117  acc: 0.6054  lr: 0.0002
+ep/it: 1- 316 niter:   700  8m 31s (- 13994m 19s) completed:  0%) loss: 1.4714  acc: 0.6121  lr: 0.0002
+ep/it: 1- 366 niter:   750  9m 2s (- 13839m 47s) completed:  0%) loss: 1.4811  acc: 0.6097  lr: 0.0002
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+motion motion_ids ========================+> tensor([[824,  35,  35,  ..., 579, 579, 579],
+        [652, 652, 652,  ..., 912, 912, 912],
+        [652, 652, 652,  ..., 566, 566, 566],
+        ...,
+        [ 35,  35,  35,  ...,  35,  35,  35],
+        [652, 652, 652,  ..., 603, 603, 603],
+        [705, 705, 705,  ..., 550, 550, 550]], device='cuda:0')
+ labels====> tensor([[909, 843, 843,  ..., 996, 996, 996],
+        [372, 147, 184,  ..., 999, 999, 286],
+        [798, 116, 116,  ..., 227, 227, 227],
+        ...,
+        [799, 719, 719,  ..., 996, 996, 996],
+        [891, 734, 734,  ..., 996, 996, 996],
+        [704, 704, 704,  ..., 996, 996, 996]], device='cuda:0')
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+--> 	 Eva. Ep 2 :, FID. 30.1549, Diversity Real. 0.0000, Diversity. 8.3742, R_precision_real. [0.015625 0.015625 0.046875], R_precision. [0.03125 0.03125 0.03125], matching_score_real. 9.665748596191406, matching_score_pred. 9.05910587310791
+--> --> 	 Top1 Improved from 0.0156 to 0.0312 !!!
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it: 2-  33 niter:   800  10m 15s (- 14712m 59s) completed:  0%) loss: 1.4618  acc: 0.6121  lr: 0.0002
+ep/it: 2-  83 niter:   850  10m 45s (- 14538m 57s) completed:  0%) loss: 1.4264  acc: 0.6195  lr: 0.0002
+ep/it: 2- 133 niter:   900  11m 16s (- 14382m 41s) completed:  0%) loss: 1.4135  acc: 0.6226  lr: 0.0002
+ep/it: 2- 183 niter:   950  11m 47s (- 14244m 3s) completed:  0%) loss: 1.4154  acc: 0.6216  lr: 0.0002
+ep/it: 2- 233 niter:  1000  12m 17s (- 14114m 0s) completed:  0%) loss: 1.4214  acc: 0.6233  lr: 0.0002
+ep/it: 2- 283 niter:  1050  12m 50s (- 14048m 6s) completed:  0%) loss: 1.4201  acc: 0.6245  lr: 0.0002
+ep/it: 2- 333 niter:  1100  13m 20s (- 13917m 14s) completed:  0%) loss: 1.4078  acc: 0.6241  lr: 0.0002
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+motion motion_ids ========================+> tensor([[ 909,  909,  909,  ...,  403,  403,  403],
+        [ 136,  136,  136,  ...,  931,  931,  931],
+        [ 799,  799,  799,  ...,  771,  771,  771],
+        ...,
+        [ 909,  909,  909,  ...,  909,  909,  909],
+        [ 136,  136,  409,  ...,  217,  217,  217],
+        [1009, 1009, 1009,  ...,   19,   19,   19]], device='cuda:0')
+ labels====> tensor([[796, 539, 539,  ..., 996, 996, 996],
+        [ 93,  93,  93,  ..., 310, 146, 146],
+        [986, 986, 577,  ..., 996, 996, 996],
+        ...,
+        [719, 719, 719,  ..., 996, 996, 996],
+        [ 85,  85,  85,  ..., 996, 996, 996],
+        [309, 874, 463,  ..., 996, 996, 996]], device='cuda:0')
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+--> 	 Eva. Ep 3 :, FID. 21.9692, Diversity Real. 13.8767, Diversity. 10.8400, R_precision_real. [0.03125  0.078125 0.09375 ], R_precision. [0.03125  0.0625   0.078125], matching_score_real. 9.13558578491211, matching_score_pred. 8.404546737670898
+--> --> 	 Diversity Improved from 4.80188 to 10.84002 !!!
+--> --> 	 Top2 Improved from 0.0312 to 0.0625 !!!
+--> --> 	 Top3 Improved from 0.0469 to 0.0781 !!!
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 230, in saving
+    yield self
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 1152, in save
+    anim._draw_next_frame(d, blit=False)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 1192, in _draw_next_frame
+    self._draw_frame(framedata)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 1755, in _draw_frame
+    self._drawn_artists = self._func(framedata, *self._args)
+  File "/root/Transformotion/trainers/../utils/plot_script.py", line 401, in update
+    color=color)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 1508, in plot
+    lines = super().plot(xs, ys, *args, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/axes/_axes.py", line 1665, in plot
+    lines = [*self._get_lines(*args, data=data, **kwargs)]
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 225, in __call__
+    yield from self._plot_args(this, kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 365, in _plot_args
+    if len(tup) > 1 and isinstance(tup[-1], str):
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 214, in train
+    plot_func=plot_eval, save_ckpt=True, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 555, in evaluation_mask_transformer
+    plot_func(data, save_dir, captions, lengths)
+  File "trainers/train_transformotion.py", line 38, in plot_t2m
+    plot_3d_motion(save_path, kinematic_chain, joint, title=caption, fps=20)
+  File "/root/Transformotion/trainers/../utils/plot_script.py", line 412, in plot_3d_motion
+    ani.save(save_path, fps=fps)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 1156, in save
+    writer.grab_frame(**savefig_kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 232, in saving
+    self.finish()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 367, in finish
+    self.cleanup()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 396, in cleanup
+    out, err = self._proc.communicate()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/subprocess.py", line 964, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/subprocess.py", line 1715, in _communicate
+    ready = selector.select(timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

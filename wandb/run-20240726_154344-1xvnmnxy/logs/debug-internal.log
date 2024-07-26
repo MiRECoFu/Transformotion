@@ -1,0 +1,524 @@
+2024-07-26 15:43:44,496 INFO    StreamThr :6733 [internal.py:wandb_internal():88] W&B internal server running at pid: 6733, started at: 2024-07-26 15:43:44.494379
+2024-07-26 15:43:44,501 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status
+2024-07-26 15:43:44,509 INFO    WriterThread:6733 [datastore.py:open_for_write():87] open: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/run-1xvnmnxy.wandb
+2024-07-26 15:43:44,509 DEBUG   SenderThread:6733 [sender.py:send():379] send: header
+2024-07-26 15:43:44,980 DEBUG   SenderThread:6733 [sender.py:send():379] send: run
+2024-07-26 15:43:46,149 INFO    SenderThread:6733 [dir_watcher.py:__init__():211] watching files in: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files
+2024-07-26 15:43:46,149 INFO    SenderThread:6733 [sender.py:_start_run_threads():1191] run started: 1xvnmnxy with start time 1721979824.495698
+2024-07-26 15:43:46,168 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: check_version
+2024-07-26 15:43:46,168 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: check_version
+2024-07-26 15:43:46,539 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: run_start
+2024-07-26 15:43:46,574 DEBUG   HandlerThread:6733 [system_info.py:__init__():26] System info init
+2024-07-26 15:43:46,574 DEBUG   HandlerThread:6733 [system_info.py:__init__():41] System info init done
+2024-07-26 15:43:46,574 INFO    HandlerThread:6733 [system_monitor.py:start():194] Starting system monitor
+2024-07-26 15:43:46,575 INFO    SystemMonitor:6733 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-26 15:43:46,575 INFO    HandlerThread:6733 [system_monitor.py:probe():214] Collecting system info
+2024-07-26 15:43:46,576 INFO    SystemMonitor:6733 [interfaces.py:start():188] Started cpu monitoring
+2024-07-26 15:43:46,577 INFO    SystemMonitor:6733 [interfaces.py:start():188] Started disk monitoring
+2024-07-26 15:43:46,578 INFO    SystemMonitor:6733 [interfaces.py:start():188] Started gpu monitoring
+2024-07-26 15:43:46,579 INFO    SystemMonitor:6733 [interfaces.py:start():188] Started memory monitoring
+2024-07-26 15:43:46,582 INFO    SystemMonitor:6733 [interfaces.py:start():188] Started network monitoring
+2024-07-26 15:43:46,710 DEBUG   HandlerThread:6733 [system_info.py:probe():152] Probing system
+2024-07-26 15:43:46,720 DEBUG   HandlerThread:6733 [system_info.py:_probe_git():137] Probing git
+2024-07-26 15:43:46,744 DEBUG   HandlerThread:6733 [system_info.py:_probe_git():145] Probing git done
+2024-07-26 15:43:46,744 DEBUG   HandlerThread:6733 [system_info.py:probe():200] Probing system done
+2024-07-26 15:43:46,744 DEBUG   HandlerThread:6733 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-86-generic-x86_64-with-debian-bookworm-sid', 'python': '3.7.13', 'heartbeatAt': '2024-07-26T07:43:46.710757', 'startedAt': '2024-07-26T07:43:44.479920', 'docker': None, 'cuda': None, 'args': ('--dataset_name', 't2m', '--name', 'trm_xl_b64_d1024_726_clip_nh16_nl18_downt_1', '--vq_name', 'rvq_down_t_1_d1024', '--gpu_id', '0'), 'state': 'running', 'program': 'trainers/train_transformotion.py', 'codePathLocal': 'trainers/train_transformotion.py', 'codePath': 'trainers/train_transformotion.py', 'git': {'remote': 'git@github.com:MiRECoFu/Transformotion.git', 'commit': 'ac2da1588102d139250297df0254e7ef4dea8fb7'}, 'email': '1027066037@qq.com', 'root': '/root/Transformotion', 'host': 'autodl-container-011d409f64-3822960f', 'username': 'root', 'executable': '/root/miniconda3/envs/transformotion/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 1.1224453124999993, 'min': 800.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 1.857, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 1.997, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.804, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.847, 'min': 800.0, 'max': 3500.0}, {'current': 1.12, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 1.975, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.392, 'min': 800.0, 'max': 3500.0}, {'current': 2.4, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 1.835, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.421, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.42, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.399, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 1.977, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 1.977, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 3.5, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.529, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.535, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.399, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.398, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.616, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 3.5, 'min': 800.0, 'max': 3500.0}, {'current': 1.961, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 1.961, 'min': 800.0, 'max': 3500.0}, {'current': 2.421, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}], 'disk': {'/': {'total': 30.0, 'used': 24.348987579345703}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 1007.2609024047852}}
+2024-07-26 15:43:46,745 INFO    HandlerThread:6733 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-26 15:43:46,745 INFO    HandlerThread:6733 [system_monitor.py:probe():227] Publishing system info
+2024-07-26 15:43:46,745 DEBUG   HandlerThread:6733 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-07-26 15:43:47,151 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/conda-environment.yaml
+2024-07-26 15:43:49,572 DEBUG   HandlerThread:6733 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-26 15:43:49,576 INFO    HandlerThread:6733 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-26 15:43:49,592 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:43:49,594 DEBUG   SenderThread:6733 [sender.py:send():379] send: files
+2024-07-26 15:43:49,595 INFO    SenderThread:6733 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-26 15:43:49,832 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-26 15:43:49,834 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:43:49,834 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: python_packages
+2024-07-26 15:43:49,836 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:49,837 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:43:50,151 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/conda-environment.yaml
+2024-07-26 15:43:50,151 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/wandb-metadata.json
+2024-07-26 15:43:50,152 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/requirements.txt
+2024-07-26 15:43:50,660 DEBUG   SenderThread:6733 [sender.py:send():379] send: telemetry
+2024-07-26 15:43:50,848 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:51,151 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:43:51,367 INFO    wandb-upload_0:6733 [upload_job.py:push():130] Uploaded file /tmp/tmp860reflhwandb/kmk36qk0-wandb-metadata.json
+2024-07-26 15:43:51,846 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:52,845 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:53,153 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:43:53,845 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:54,664 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:43:54,846 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:55,846 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:56,846 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:57,847 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:58,846 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:43:59,836 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:43:59,846 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:00,847 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:01,847 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:02,848 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:03,159 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:44:03,847 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:04,833 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:44:04,834 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:44:04,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:05,234 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:05,848 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:06,848 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:07,849 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:08,848 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:09,848 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:10,326 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:10,848 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:11,164 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:44:11,849 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:12,849 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:13,849 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:14,849 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:15,842 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:15,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:16,850 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:17,173 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/config.yaml
+2024-07-26 15:44:17,850 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:18,850 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:19,834 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:44:19,835 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:44:19,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:20,850 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:21,176 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:44:21,445 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:21,851 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:22,851 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:23,852 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:24,851 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:25,851 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:26,837 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:26,852 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:27,852 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:28,852 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:29,852 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:30,852 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:31,182 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:44:31,852 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:32,197 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:32,853 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:33,853 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:34,834 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:44:34,835 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:44:34,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:35,855 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:36,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:37,203 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:37,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:38,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:39,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:40,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:41,188 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:44:41,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:42,838 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:42,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:43,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:44,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:45,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:46,582 DEBUG   SystemMonitor:6733 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-26 15:44:46,586 DEBUG   SenderThread:6733 [sender.py:send():379] send: stats
+2024-07-26 15:44:46,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:47,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:48,590 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:48,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:49,834 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:44:49,835 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:44:49,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:50,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:51,194 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:44:51,857 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:52,858 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:53,858 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:54,228 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:54,858 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:55,859 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:56,859 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:57,859 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:58,859 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:44:59,838 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:44:59,859 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:00,859 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:01,200 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:45:01,859 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:02,863 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:03,860 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:04,834 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:45:04,835 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:45:04,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:05,225 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:05,860 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:06,865 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:07,860 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:08,860 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:09,861 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:10,838 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:10,861 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:11,207 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:45:11,861 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:12,861 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:13,861 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:14,862 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:15,862 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:16,590 DEBUG   SenderThread:6733 [sender.py:send():379] send: stats
+2024-07-26 15:45:16,593 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:16,862 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:17,862 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:18,863 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:19,211 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:45:19,834 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:45:19,835 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:45:19,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:20,864 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:21,864 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:22,216 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:22,864 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:23,864 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:24,866 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:25,865 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:26,865 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:27,839 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:27,865 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:28,865 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:29,870 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:30,869 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:31,219 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:45:31,870 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:32,854 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:32,870 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:33,870 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:34,835 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:45:34,836 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:45:34,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:35,871 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:36,871 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:37,871 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:38,150 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:38,871 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:39,871 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:40,872 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:41,225 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:45:41,872 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:42,874 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:43,425 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:43,874 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:44,874 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:45,874 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:46,594 DEBUG   SenderThread:6733 [sender.py:send():379] send: stats
+2024-07-26 15:45:46,874 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:47,874 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:48,597 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:48,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:49,835 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:45:49,836 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:45:49,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:50,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:51,233 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:45:51,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:52,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:53,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:54,233 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:54,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:55,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:56,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:57,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:58,875 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:45:59,840 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:45:59,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:00,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:01,239 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:46:01,876 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:02,879 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:03,878 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:04,835 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:46:04,836 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:46:04,878 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:05,201 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:05,878 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:06,878 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:07,879 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:08,878 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:09,879 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:10,880 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:11,073 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:11,244 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:46:11,880 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:12,880 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:13,880 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:14,880 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:15,880 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:16,599 DEBUG   SenderThread:6733 [sender.py:send():379] send: stats
+2024-07-26 15:46:16,602 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:16,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:17,881 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:18,881 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:19,835 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:46:19,836 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:46:19,881 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:20,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:21,250 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:46:21,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:22,164 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:22,881 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:23,881 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:24,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:25,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:26,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:27,841 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:27,883 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:28,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:29,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:30,882 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:31,256 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:46:31,883 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:32,841 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:32,883 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:33,883 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:34,836 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:46:34,837 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:46:34,883 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:35,883 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:36,884 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:37,883 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:38,154 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:38,912 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:39,884 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:40,884 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:41,263 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:46:41,884 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:42,884 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:43,842 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:43,884 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:44,884 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:45,885 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:46,603 DEBUG   SenderThread:6733 [sender.py:send():379] send: stats
+2024-07-26 15:46:46,885 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:47,885 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:48,887 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:49,268 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:46:49,289 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:49,838 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:46:49,839 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:46:49,887 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:50,887 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:51,887 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:52,887 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:53,887 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:54,841 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:54,887 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:55,888 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:56,888 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:57,888 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:58,889 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:46:59,279 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:46:59,842 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:46:59,889 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:00,889 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:01,889 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:02,890 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:03,890 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:04,837 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:47:04,838 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:47:04,890 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:05,152 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:47:05,890 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:06,891 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:07,890 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:08,891 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:09,285 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:47:09,891 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:10,843 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:47:10,891 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:11,891 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:12,891 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:13,892 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:14,892 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:15,891 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:16,606 DEBUG   SenderThread:6733 [sender.py:send():379] send: stats
+2024-07-26 15:47:16,609 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:47:16,892 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:17,893 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:18,892 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:19,291 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:47:19,838 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:47:19,838 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:47:19,892 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:20,893 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:21,893 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:22,165 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:47:22,893 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:23,893 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:24,893 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:25,894 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:26,894 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:27,843 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:47:27,894 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:28,894 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:29,894 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:30,894 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:31,297 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:47:31,894 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:32,844 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:47:32,895 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:33,895 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:34,838 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:47:34,838 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:47:34,895 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:35,895 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:36,895 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:37,896 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:38,247 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:47:38,896 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:39,896 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:40,851 DEBUG   SenderThread:6733 [sender.py:send():379] send: exit
+2024-07-26 15:47:40,851 INFO    SenderThread:6733 [sender.py:send_exit():586] handling exit code: 1
+2024-07-26 15:47:40,851 INFO    SenderThread:6733 [sender.py:send_exit():588] handling runtime: 234
+2024-07-26 15:47:40,852 INFO    SenderThread:6733 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-26 15:47:40,852 INFO    SenderThread:6733 [sender.py:send_exit():594] send defer
+2024-07-26 15:47:40,852 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:40,852 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-26 15:47:40,853 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:40,853 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-26 15:47:40,853 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 1
+2024-07-26 15:47:40,853 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:40,853 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-26 15:47:40,853 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:40,853 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-26 15:47:40,853 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 2
+2024-07-26 15:47:40,854 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:40,854 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-26 15:47:40,854 INFO    HandlerThread:6733 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-26 15:47:40,854 DEBUG   SystemMonitor:6733 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-26 15:47:40,854 DEBUG   SystemMonitor:6733 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-26 15:47:40,859 INFO    HandlerThread:6733 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-26 15:47:40,859 INFO    HandlerThread:6733 [interfaces.py:finish():200] Joined disk monitor
+2024-07-26 15:47:40,885 INFO    HandlerThread:6733 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-26 15:47:40,886 INFO    HandlerThread:6733 [interfaces.py:finish():200] Joined memory monitor
+2024-07-26 15:47:40,886 INFO    HandlerThread:6733 [interfaces.py:finish():200] Joined network monitor
+2024-07-26 15:47:40,888 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:40,888 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-26 15:47:40,888 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 3
+2024-07-26 15:47:40,889 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:40,889 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-26 15:47:40,889 DEBUG   SenderThread:6733 [sender.py:send():379] send: stats
+2024-07-26 15:47:40,892 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:40,892 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-26 15:47:40,892 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 4
+2024-07-26 15:47:40,893 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:40,893 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-26 15:47:40,893 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:40,893 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-26 15:47:40,893 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 5
+2024-07-26 15:47:40,894 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:40,894 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-26 15:47:40,894 DEBUG   SenderThread:6733 [sender.py:send():379] send: summary
+2024-07-26 15:47:40,895 INFO    SenderThread:6733 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-26 15:47:40,896 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:40,896 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-26 15:47:40,896 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 6
+2024-07-26 15:47:40,897 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:40,897 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-26 15:47:40,897 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:40,897 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-26 15:47:40,898 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 7
+2024-07-26 15:47:40,898 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:47:40,898 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:40,898 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-26 15:47:40,898 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:40,899 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-26 15:47:41,301 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:47:41,302 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/wandb-summary.json
+2024-07-26 15:47:41,851 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:47:42,952 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 8
+2024-07-26 15:47:42,952 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:47:42,952 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:42,953 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-26 15:47:42,954 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:42,954 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-26 15:47:42,954 INFO    SenderThread:6733 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-26 15:47:42,955 INFO    SenderThread:6733 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-26 15:47:43,003 INFO    SenderThread:6733 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-26 15:47:43,009 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 9
+2024-07-26 15:47:43,010 DEBUG   SenderThread:6733 [sender.py:send():379] send: artifact
+2024-07-26 15:47:43,011 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:43,019 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-26 15:47:43,306 INFO    Thread-12 :6733 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:47:43,853 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:47:44,533 INFO    SenderThread:6733 [sender.py:send_artifact():1530] sent artifact job-git_github.com_MiRECoFu_Transformotion.git_trainers_train_transformotion.py - {'id': 'QXJ0aWZhY3Q6OTM0NjczMjc0', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMTg0OTQwMw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTAyMjY3MTAyNg==', 'versionIndex': 32}}}
+2024-07-26 15:47:44,534 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:44,534 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-26 15:47:44,534 INFO    SenderThread:6733 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-26 15:47:45,308 INFO    SenderThread:6733 [dir_watcher.py:finish():388] scan: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files
+2024-07-26 15:47:45,308 INFO    SenderThread:6733 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/config.yaml config.yaml
+2024-07-26 15:47:45,309 INFO    SenderThread:6733 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/conda-environment.yaml conda-environment.yaml
+2024-07-26 15:47:45,309 INFO    SenderThread:6733 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/wandb-metadata.json wandb-metadata.json
+2024-07-26 15:47:45,309 INFO    SenderThread:6733 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/requirements.txt requirements.txt
+2024-07-26 15:47:45,321 INFO    SenderThread:6733 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log output.log
+2024-07-26 15:47:45,322 INFO    SenderThread:6733 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/wandb-summary.json wandb-summary.json
+2024-07-26 15:47:45,335 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 10
+2024-07-26 15:47:45,336 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:47:45,337 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:45,338 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-26 15:47:45,339 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:45,342 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-26 15:47:45,342 INFO    SenderThread:6733 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-26 15:47:45,856 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:47:45,858 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:47:46,035 INFO    wandb-upload_2:6733 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/conda-environment.yaml
+2024-07-26 15:47:46,519 INFO    wandb-upload_3:6733 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/requirements.txt
+2024-07-26 15:47:46,579 INFO    wandb-upload_1:6733 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/config.yaml
+2024-07-26 15:47:46,859 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:47:46,860 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:47:47,096 INFO    wandb-upload_4:6733 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/wandb-summary.json
+2024-07-26 15:47:47,133 INFO    wandb-upload_0:6733 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/files/output.log
+2024-07-26 15:47:47,334 INFO    Thread-11 :6733 [sender.py:transition_state():614] send defer: 11
+2024-07-26 15:47:47,335 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:47,335 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-26 15:47:47,336 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:47,336 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-26 15:47:47,336 INFO    SenderThread:6733 [file_pusher.py:join():175] waiting for file pusher
+2024-07-26 15:47:47,337 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 12
+2024-07-26 15:47:47,337 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:47,337 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-26 15:47:47,338 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:47,338 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-26 15:47:47,338 INFO    SenderThread:6733 [file_stream.py:finish():601] file stream finish called
+2024-07-26 15:47:47,860 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:47:48,293 INFO    SenderThread:6733 [file_stream.py:finish():605] file stream finish is done
+2024-07-26 15:47:48,294 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 13
+2024-07-26 15:47:48,294 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:47:48,295 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:48,295 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-26 15:47:48,296 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:48,296 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-26 15:47:48,296 INFO    SenderThread:6733 [sender.py:transition_state():614] send defer: 14
+2024-07-26 15:47:48,297 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:47:48,297 INFO    HandlerThread:6733 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-26 15:47:48,298 DEBUG   SenderThread:6733 [sender.py:send():379] send: final
+2024-07-26 15:47:48,298 DEBUG   SenderThread:6733 [sender.py:send():379] send: footer
+2024-07-26 15:47:48,298 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:47:48,298 INFO    SenderThread:6733 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-26 15:47:48,300 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:47:48,300 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:47:48,301 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: server_info
+2024-07-26 15:47:48,302 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:47:48,303 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: server_info
+2024-07-26 15:47:48,303 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-26 15:47:48,312 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-26 15:47:48,314 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:47:48,623 DEBUG   SenderThread:6733 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:47:48,624 INFO    MainThread:6733 [wandb_run.py:_footer_history_summary_info():3988] rendering history
+2024-07-26 15:47:48,625 INFO    MainThread:6733 [wandb_run.py:_footer_history_summary_info():4020] rendering summary
+2024-07-26 15:47:48,625 INFO    MainThread:6733 [wandb_run.py:_footer_sync_info():3947] logging synced files
+2024-07-26 15:47:48,626 DEBUG   HandlerThread:6733 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-26 15:47:48,627 INFO    HandlerThread:6733 [handler.py:finish():882] shutting down handler
+2024-07-26 15:47:49,303 INFO    WriterThread:6733 [datastore.py:close():296] close: /root/Transformotion/wandb/run-20240726_154344-1xvnmnxy/run-1xvnmnxy.wandb
+2024-07-26 15:47:49,624 INFO    SenderThread:6733 [sender.py:finish():1608] shutting down sender
+2024-07-26 15:47:49,624 INFO    SenderThread:6733 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-26 15:47:49,625 INFO    SenderThread:6733 [file_pusher.py:join():175] waiting for file pusher

@@ -1,0 +1,286 @@
+2024-07-26 15:57:47,545 INFO    StreamThr :8010 [internal.py:wandb_internal():88] W&B internal server running at pid: 8010, started at: 2024-07-26 15:57:47.544210
+2024-07-26 15:57:47,550 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status
+2024-07-26 15:57:47,554 INFO    WriterThread:8010 [datastore.py:open_for_write():87] open: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/run-f8tk64wd.wandb
+2024-07-26 15:57:47,554 DEBUG   SenderThread:8010 [sender.py:send():379] send: header
+2024-07-26 15:57:47,951 DEBUG   SenderThread:8010 [sender.py:send():379] send: run
+2024-07-26 15:57:49,224 INFO    SenderThread:8010 [dir_watcher.py:__init__():211] watching files in: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files
+2024-07-26 15:57:49,225 INFO    SenderThread:8010 [sender.py:_start_run_threads():1191] run started: f8tk64wd with start time 1721980667.545086
+2024-07-26 15:57:49,237 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: check_version
+2024-07-26 15:57:49,238 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: check_version
+2024-07-26 15:57:50,097 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: run_start
+2024-07-26 15:57:50,125 DEBUG   HandlerThread:8010 [system_info.py:__init__():26] System info init
+2024-07-26 15:57:50,125 DEBUG   HandlerThread:8010 [system_info.py:__init__():41] System info init done
+2024-07-26 15:57:50,125 INFO    HandlerThread:8010 [system_monitor.py:start():194] Starting system monitor
+2024-07-26 15:57:50,125 INFO    SystemMonitor:8010 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-26 15:57:50,126 INFO    HandlerThread:8010 [system_monitor.py:probe():214] Collecting system info
+2024-07-26 15:57:50,126 INFO    SystemMonitor:8010 [interfaces.py:start():188] Started cpu monitoring
+2024-07-26 15:57:50,127 INFO    SystemMonitor:8010 [interfaces.py:start():188] Started disk monitoring
+2024-07-26 15:57:50,128 INFO    SystemMonitor:8010 [interfaces.py:start():188] Started gpu monitoring
+2024-07-26 15:57:50,129 INFO    SystemMonitor:8010 [interfaces.py:start():188] Started memory monitoring
+2024-07-26 15:57:50,130 INFO    SystemMonitor:8010 [interfaces.py:start():188] Started network monitoring
+2024-07-26 15:57:50,234 DEBUG   HandlerThread:8010 [system_info.py:probe():152] Probing system
+2024-07-26 15:57:50,244 DEBUG   HandlerThread:8010 [system_info.py:_probe_git():137] Probing git
+2024-07-26 15:57:50,262 DEBUG   HandlerThread:8010 [system_info.py:_probe_git():145] Probing git done
+2024-07-26 15:57:50,262 DEBUG   HandlerThread:8010 [system_info.py:probe():200] Probing system done
+2024-07-26 15:57:50,262 DEBUG   HandlerThread:8010 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-86-generic-x86_64-with-debian-bookworm-sid', 'python': '3.7.13', 'heartbeatAt': '2024-07-26T07:57:50.235000', 'startedAt': '2024-07-26T07:57:47.532034', 'docker': None, 'cuda': None, 'args': ('--dataset_name', 't2m', '--name', 'trm_xl_b64_d1024_726_clip_nh16_nl18_downt_1', '--vq_name', 'rvq_down_t_1_d1024', '--gpu_id', '0'), 'state': 'running', 'program': 'trainers/train_transformotion.py', 'codePathLocal': 'trainers/train_transformotion.py', 'codePath': 'trainers/train_transformotion.py', 'git': {'remote': 'git@github.com:MiRECoFu/Transformotion.git', 'commit': 'ac2da1588102d139250297df0254e7ef4dea8fb7'}, 'email': '1027066037@qq.com', 'root': '/root/Transformotion', 'host': 'autodl-container-011d409f64-3822960f', 'username': 'root', 'executable': '/root/miniconda3/envs/transformotion/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 1.2158906250000006, 'min': 800.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 3.5, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 1.895, 'min': 800.0, 'max': 3500.0}, {'current': 0.901, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.2, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.552, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.46, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.459, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.458, 'min': 800.0, 'max': 3500.0}, {'current': 2.458, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.458, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.458, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.473, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.459, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.459, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.459, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.459, 'min': 800.0, 'max': 3500.0}, {'current': 2.459, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.459, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}], 'disk': {'/': {'total': 30.0, 'used': 24.349498748779297}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 1007.2609024047852}}
+2024-07-26 15:57:50,262 INFO    HandlerThread:8010 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-26 15:57:50,262 INFO    HandlerThread:8010 [system_monitor.py:probe():227] Publishing system info
+2024-07-26 15:57:50,262 DEBUG   HandlerThread:8010 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-07-26 15:57:51,229 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/conda-environment.yaml
+2024-07-26 15:57:53,091 DEBUG   HandlerThread:8010 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-26 15:57:53,096 INFO    HandlerThread:8010 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-26 15:57:53,111 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:57:53,113 DEBUG   SenderThread:8010 [sender.py:send():379] send: files
+2024-07-26 15:57:53,114 INFO    SenderThread:8010 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-26 15:57:53,227 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/conda-environment.yaml
+2024-07-26 15:57:53,227 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/wandb-metadata.json
+2024-07-26 15:57:53,346 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-26 15:57:53,347 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 15:57:53,348 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: python_packages
+2024-07-26 15:57:53,349 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 15:57:53,351 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 15:57:54,227 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/requirements.txt
+2024-07-26 15:57:54,337 DEBUG   SenderThread:8010 [sender.py:send():379] send: telemetry
+2024-07-26 15:57:54,342 DEBUG   SenderThread:8010 [sender.py:send():379] send: exit
+2024-07-26 15:57:54,342 INFO    SenderThread:8010 [sender.py:send_exit():586] handling exit code: 1
+2024-07-26 15:57:54,342 INFO    SenderThread:8010 [sender.py:send_exit():588] handling runtime: 4
+2024-07-26 15:57:54,346 INFO    SenderThread:8010 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-26 15:57:54,347 INFO    SenderThread:8010 [sender.py:send_exit():594] send defer
+2024-07-26 15:57:54,347 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:54,348 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-26 15:57:54,348 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:54,349 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-26 15:57:54,349 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 1
+2024-07-26 15:57:54,349 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:54,349 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-26 15:57:54,350 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:54,350 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-26 15:57:54,350 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 2
+2024-07-26 15:57:54,350 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:54,350 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-26 15:57:54,350 INFO    HandlerThread:8010 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-26 15:57:54,351 DEBUG   SystemMonitor:8010 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-26 15:57:54,353 INFO    HandlerThread:8010 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-26 15:57:54,353 DEBUG   SystemMonitor:8010 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-26 15:57:54,353 INFO    HandlerThread:8010 [interfaces.py:finish():200] Joined disk monitor
+2024-07-26 15:57:54,353 DEBUG   SystemMonitor:8010 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-26 15:57:54,380 INFO    HandlerThread:8010 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-26 15:57:54,380 INFO    HandlerThread:8010 [interfaces.py:finish():200] Joined memory monitor
+2024-07-26 15:57:54,381 INFO    HandlerThread:8010 [interfaces.py:finish():200] Joined network monitor
+2024-07-26 15:57:54,382 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:54,383 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-26 15:57:54,383 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 3
+2024-07-26 15:57:54,383 DEBUG   SenderThread:8010 [sender.py:send():379] send: stats
+2024-07-26 15:57:54,386 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:54,386 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-26 15:57:54,388 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:54,388 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-26 15:57:54,389 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 4
+2024-07-26 15:57:54,389 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:54,389 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-26 15:57:54,390 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:54,390 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-26 15:57:54,390 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 5
+2024-07-26 15:57:54,390 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:54,390 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-26 15:57:54,391 DEBUG   SenderThread:8010 [sender.py:send():379] send: summary
+2024-07-26 15:57:54,392 INFO    SenderThread:8010 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-26 15:57:54,393 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:54,393 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-26 15:57:54,394 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 6
+2024-07-26 15:57:54,394 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:54,394 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-26 15:57:54,394 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:54,395 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-26 15:57:54,400 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:57:54,764 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 7
+2024-07-26 15:57:54,765 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:54,765 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-26 15:57:54,766 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:54,766 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-26 15:57:55,011 INFO    wandb-upload_0:8010 [upload_job.py:push():130] Uploaded file /tmp/tmpoksvnqubwandb/90zltgp1-wandb-metadata.json
+2024-07-26 15:57:55,221 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:57:55,228 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/config.yaml
+2024-07-26 15:57:55,228 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/output.log
+2024-07-26 15:57:55,229 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/wandb-summary.json
+2024-07-26 15:57:57,229 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/output.log
+2024-07-26 15:57:58,369 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 8
+2024-07-26 15:57:58,370 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:57:58,370 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:58,371 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-26 15:57:58,372 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:57:58,372 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-26 15:57:58,372 INFO    SenderThread:8010 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-26 15:57:58,373 INFO    SenderThread:8010 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-26 15:57:58,423 INFO    SenderThread:8010 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-26 15:57:58,429 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 9
+2024-07-26 15:57:58,431 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:57:58,431 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-26 15:57:58,432 DEBUG   SenderThread:8010 [sender.py:send():379] send: artifact
+2024-07-26 15:57:59,224 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:57:59,230 INFO    Thread-12 :8010 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/output.log
+2024-07-26 15:58:00,111 INFO    SenderThread:8010 [sender.py:send_artifact():1530] sent artifact job-git_github.com_MiRECoFu_Transformotion.git_trainers_train_transformotion.py - {'id': 'QXJ0aWZhY3Q6OTM0NjczMjc0', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMTg0OTQwMw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTAyMjY3MTAyNg==', 'versionIndex': 32}}}
+2024-07-26 15:58:00,111 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:58:00,111 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-26 15:58:00,111 INFO    SenderThread:8010 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-26 15:58:00,232 INFO    SenderThread:8010 [dir_watcher.py:finish():388] scan: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files
+2024-07-26 15:58:00,232 INFO    SenderThread:8010 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/config.yaml config.yaml
+2024-07-26 15:58:00,233 INFO    SenderThread:8010 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/conda-environment.yaml conda-environment.yaml
+2024-07-26 15:58:00,233 INFO    SenderThread:8010 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/wandb-metadata.json wandb-metadata.json
+2024-07-26 15:58:00,233 INFO    SenderThread:8010 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/requirements.txt requirements.txt
+2024-07-26 15:58:00,239 INFO    SenderThread:8010 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/output.log output.log
+2024-07-26 15:58:00,246 INFO    SenderThread:8010 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/wandb-summary.json wandb-summary.json
+2024-07-26 15:58:00,246 INFO    SenderThread:8010 [sender.py:transition_state():614] send defer: 10
+2024-07-26 15:58:00,247 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:00,247 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 15:58:00,248 INFO    HandlerThread:8010 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-26 15:58:00,270 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: defer
+2024-07-26 15:58:00,271 INFO    SenderThread:8010 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-26 15:58:00,271 INFO    SenderThread:8010 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-26 15:58:00,960 INFO    wandb-upload_2:8010 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/conda-environment.yaml
+2024-07-26 15:58:01,227 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:01,229 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:01,509 INFO    wandb-upload_3:8010 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/requirements.txt
+2024-07-26 15:58:02,016 INFO    wandb-upload_0:8010 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/output.log
+2024-07-26 15:58:02,033 INFO    wandb-upload_5:8010 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/wandb-summary.json
+2024-07-26 15:58:02,229 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:02,231 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:03,231 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:03,233 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:04,234 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:04,234 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:04,235 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:05,236 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:05,238 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:06,238 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:06,240 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:07,240 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:07,241 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:08,243 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:08,244 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:09,244 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:09,246 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:09,246 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:10,248 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:10,249 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:11,250 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:11,251 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:12,252 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:12,253 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:13,254 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:13,256 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:14,256 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:14,257 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:14,258 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:15,259 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:15,260 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:16,262 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:16,263 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:17,263 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:17,264 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:18,266 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:18,267 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:19,267 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:19,269 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:19,270 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:20,270 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:20,271 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:21,270 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:21,271 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:22,272 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:22,273 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:23,273 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:23,274 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:24,275 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:24,275 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:24,276 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:25,276 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:25,278 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:26,278 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:26,279 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:27,279 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:27,281 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:28,282 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:28,283 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:29,283 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:29,285 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:29,285 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:30,286 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:30,287 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:31,287 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:31,288 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:32,290 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:32,291 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:33,290 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:33,292 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:34,292 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:34,293 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:34,294 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:35,293 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:35,295 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:36,295 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:36,297 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:37,297 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:37,299 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:38,300 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:38,301 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:39,301 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:39,302 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:39,303 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:40,305 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:40,306 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:41,306 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:41,307 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:42,308 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:42,309 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:43,309 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:43,310 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:44,310 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:44,311 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:44,312 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:45,311 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:45,312 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:46,313 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:46,314 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:47,314 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:47,315 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:48,316 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:48,317 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:49,317 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:49,318 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:49,319 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:50,319 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:50,320 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:51,320 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:51,322 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:52,323 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:52,324 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:53,324 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:53,326 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:54,327 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:54,328 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:54,329 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:55,330 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:55,331 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:56,331 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:56,332 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:57,333 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:57,334 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:58,334 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:58,336 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:58:59,337 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 15:58:59,337 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:58:59,338 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:59:00,339 DEBUG   HandlerThread:8010 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 15:59:00,340 DEBUG   SenderThread:8010 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 15:59:00,623 WARNING StreamThr :8010 [internal.py:is_dead():414] Internal process exiting, parent pid 7972 disappeared
+2024-07-26 15:59:00,623 ERROR   StreamThr :8010 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-07-26 15:59:01,340 INFO    HandlerThread:8010 [handler.py:finish():882] shutting down handler
+2024-07-26 15:59:01,341 INFO    WriterThread:8010 [datastore.py:close():296] close: /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/run-f8tk64wd.wandb
+2024-07-26 15:59:01,341 INFO    SenderThread:8010 [sender.py:finish():1608] shutting down sender
+2024-07-26 15:59:01,342 INFO    SenderThread:8010 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-26 15:59:01,342 INFO    SenderThread:8010 [file_pusher.py:join():175] waiting for file pusher
+2024-07-26 16:00:12,587 INFO    wandb-upload_1:8010 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240726_155747-f8tk64wd/files/config.yaml
+2024-07-26 16:00:12,788 INFO    Thread-11 :8010 [sender.py:transition_state():614] send defer: 11
+2024-07-26 16:00:12,922 INFO    SenderThread:8010 [file_stream.py:finish():601] file stream finish called
+2024-07-26 16:00:13,237 INFO    SenderThread:8010 [file_stream.py:finish():605] file stream finish is done

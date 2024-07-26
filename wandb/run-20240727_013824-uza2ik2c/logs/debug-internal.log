@@ -1,0 +1,1472 @@
+2024-07-27 01:38:24,157 INFO    StreamThr :28711 [internal.py:wandb_internal():88] W&B internal server running at pid: 28711, started at: 2024-07-27 01:38:24.155986
+2024-07-27 01:38:24,162 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status
+2024-07-27 01:38:24,164 INFO    WriterThread:28711 [datastore.py:open_for_write():87] open: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/run-uza2ik2c.wandb
+2024-07-27 01:38:24,165 DEBUG   SenderThread:28711 [sender.py:send():379] send: header
+2024-07-27 01:38:24,534 DEBUG   SenderThread:28711 [sender.py:send():379] send: run
+2024-07-27 01:38:25,749 INFO    SenderThread:28711 [dir_watcher.py:__init__():211] watching files in: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files
+2024-07-27 01:38:25,750 INFO    SenderThread:28711 [sender.py:_start_run_threads():1191] run started: uza2ik2c with start time 1722015504.156503
+2024-07-27 01:38:25,766 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: check_version
+2024-07-27 01:38:25,767 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: check_version
+2024-07-27 01:38:26,335 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: run_start
+2024-07-27 01:38:26,377 DEBUG   HandlerThread:28711 [system_info.py:__init__():26] System info init
+2024-07-27 01:38:26,377 DEBUG   HandlerThread:28711 [system_info.py:__init__():41] System info init done
+2024-07-27 01:38:26,377 INFO    HandlerThread:28711 [system_monitor.py:start():194] Starting system monitor
+2024-07-27 01:38:26,378 INFO    SystemMonitor:28711 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-27 01:38:26,378 INFO    HandlerThread:28711 [system_monitor.py:probe():214] Collecting system info
+2024-07-27 01:38:26,379 INFO    SystemMonitor:28711 [interfaces.py:start():188] Started cpu monitoring
+2024-07-27 01:38:26,380 INFO    SystemMonitor:28711 [interfaces.py:start():188] Started disk monitoring
+2024-07-27 01:38:26,381 INFO    SystemMonitor:28711 [interfaces.py:start():188] Started gpu monitoring
+2024-07-27 01:38:26,382 INFO    SystemMonitor:28711 [interfaces.py:start():188] Started memory monitoring
+2024-07-27 01:38:26,383 INFO    SystemMonitor:28711 [interfaces.py:start():188] Started network monitoring
+2024-07-27 01:38:26,513 DEBUG   HandlerThread:28711 [system_info.py:probe():152] Probing system
+2024-07-27 01:38:26,523 DEBUG   HandlerThread:28711 [system_info.py:_probe_git():137] Probing git
+2024-07-27 01:38:26,538 DEBUG   HandlerThread:28711 [system_info.py:_probe_git():145] Probing git done
+2024-07-27 01:38:26,539 DEBUG   HandlerThread:28711 [system_info.py:probe():200] Probing system done
+2024-07-27 01:38:26,539 DEBUG   HandlerThread:28711 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-86-generic-x86_64-with-debian-bookworm-sid', 'python': '3.7.13', 'heartbeatAt': '2024-07-26T17:38:26.513325', 'startedAt': '2024-07-26T17:38:24.144082', 'docker': None, 'cuda': None, 'args': ('--dataset_name', 't2m', '--name', 'trm_xl_b64_d1024_726_clip_nh16_nl18_downt_1_o', '--vq_name', 'rvq_down_t_1_d1024', '--gpu_id', '0'), 'state': 'running', 'program': 'trainers/train_transformotion.py', 'codePathLocal': 'trainers/train_transformotion.py', 'codePath': 'trainers/train_transformotion.py', 'git': {'remote': 'git@github.com:MiRECoFu/Transformotion.git', 'commit': 'ac2da1588102d139250297df0254e7ef4dea8fb7'}, 'email': '1027066037@qq.com', 'root': '/root/Transformotion', 'host': 'autodl-container-011d409f64-3822960f', 'username': 'root', 'executable': '/root/miniconda3/envs/transformotion/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 1.1971250000000013, 'min': 800.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 3.5, 'min': 800.0, 'max': 3500.0}, {'current': 1.98, 'min': 800.0, 'max': 3500.0}, {'current': 1.989, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 3.5, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.455, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.89, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.999, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.993, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.549, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.506, 'min': 800.0, 'max': 3500.0}, {'current': 2.549, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.33, 'min': 800.0, 'max': 3500.0}, {'current': 1.96, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.396, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.411, 'min': 800.0, 'max': 3500.0}, {'current': 2.419, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.433, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.434, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.435, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 1.146, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.0, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 3.5, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 2.999, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}, {'current': 0.8, 'min': 800.0, 'max': 3500.0}], 'disk': {'/': {'total': 30.0, 'used': 24.38561248779297}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 1007.2609024047852}}
+2024-07-27 01:38:26,539 INFO    HandlerThread:28711 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-27 01:38:26,539 INFO    HandlerThread:28711 [system_monitor.py:probe():227] Publishing system info
+2024-07-27 01:38:26,539 DEBUG   HandlerThread:28711 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-07-27 01:38:26,752 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/conda-environment.yaml
+2024-07-27 01:38:29,316 DEBUG   HandlerThread:28711 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-27 01:38:29,321 INFO    HandlerThread:28711 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-27 01:38:29,337 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:38:29,338 DEBUG   SenderThread:28711 [sender.py:send():379] send: files
+2024-07-27 01:38:29,339 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-27 01:38:29,575 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-27 01:38:29,576 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-27 01:38:29,577 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: python_packages
+2024-07-27 01:38:29,578 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:29,580 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: stop_status
+2024-07-27 01:38:29,752 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/conda-environment.yaml
+2024-07-27 01:38:29,753 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-metadata.json
+2024-07-27 01:38:29,753 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/requirements.txt
+2024-07-27 01:38:30,492 DEBUG   SenderThread:28711 [sender.py:send():379] send: telemetry
+2024-07-27 01:38:30,577 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:30,753 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:38:31,245 INFO    wandb-upload_0:28711 [upload_job.py:push():130] Uploaded file /tmp/tmp72k7na6uwandb/4d3sf62f-wandb-metadata.json
+2024-07-27 01:38:31,577 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:32,578 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:32,754 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:38:33,578 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:34,578 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:38:34,579 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:35,582 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:36,579 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:37,579 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:38,579 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:39,578 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:38:39,579 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:40,579 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:40,652 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:38:40,657 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:38:40,658 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:38:40,659 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:38:40,759 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:38:40,759 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_created():271] file/dir created: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:38:41,584 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:42,585 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:42,760 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:38:43,751 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:44,589 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:38:44,596 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-27 01:38:44,597 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: stop_status
+2024-07-27 01:38:44,745 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:45,747 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:46,761 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:47,748 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:48,750 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:49,749 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:50,582 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:38:50,750 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:51,749 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:52,758 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:53,762 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:54,763 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:55,590 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:38:55,761 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:56,763 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:56,768 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/config.yaml
+2024-07-27 01:38:57,767 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:58,928 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:38:59,589 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-27 01:38:59,589 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: stop_status
+2024-07-27 01:38:59,917 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:00,919 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:01,910 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:01,918 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:02,917 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:03,918 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:05,268 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:05,704 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:05,707 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:05,707 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:05,710 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:05,773 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:06,007 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:06,009 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:06,009 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:06,010 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:06,266 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:06,335 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:06,337 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:06,337 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:06,338 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:06,626 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:06,628 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:06,629 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:06,629 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:06,774 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:06,775 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:39:06,955 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:06,957 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:06,957 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:06,957 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:06,958 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:07,246 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:07,248 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:07,248 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:07,249 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:07,266 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:07,568 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:07,570 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:07,570 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:07,571 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:07,774 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:07,858 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:07,860 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:07,861 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:07,866 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:08,182 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:08,183 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:08,184 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:08,185 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:08,266 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:08,471 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:08,473 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:08,474 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:08,475 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:08,775 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:08,804 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:08,806 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:08,806 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:08,807 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:09,096 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:09,098 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:09,098 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:09,099 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:09,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:09,423 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:09,425 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:09,425 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:09,426 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:09,715 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:09,716 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:09,717 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:09,718 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:09,775 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:10,041 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:10,043 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:10,043 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:10,049 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:10,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:10,336 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:10,338 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:10,339 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:10,340 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:10,666 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:10,668 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:10,668 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:10,670 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:10,776 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:10,960 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:10,962 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:10,962 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:10,963 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:11,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:11,285 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:11,287 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:11,288 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:11,289 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:11,577 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:11,579 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:11,580 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:11,581 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:11,776 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:11,900 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:11,902 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:11,902 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:11,903 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:12,191 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:12,193 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:12,194 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:12,194 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:12,200 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:12,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:12,516 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:12,518 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:12,518 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:12,519 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:12,776 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:12,807 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:12,809 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:12,809 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:12,810 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:13,134 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:13,136 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:13,136 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:13,137 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:13,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:13,426 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:13,428 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:13,428 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:13,429 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:13,754 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:13,756 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:13,756 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:13,757 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:13,777 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:14,044 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:14,046 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:14,047 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:14,048 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:14,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:14,369 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:14,370 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:14,371 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:14,377 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:14,588 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-27 01:39:14,589 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: stop_status
+2024-07-27 01:39:14,660 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:14,777 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:14,958 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:14,959 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:14,960 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:14,983 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:14,985 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:14,985 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:14,986 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:15,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:15,276 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:15,278 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:15,278 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:15,279 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:15,596 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:15,598 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:15,599 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:15,599 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:15,778 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:15,887 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:15,889 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:15,889 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:15,890 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:16,211 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:16,212 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:16,213 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:16,213 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:16,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:16,519 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:16,520 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:16,521 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:16,526 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:16,778 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:16,840 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:16,841 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:16,842 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:16,842 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:17,146 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:17,147 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:17,148 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:17,149 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:17,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:17,470 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:17,472 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:17,473 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:17,473 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:17,474 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:17,776 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:17,777 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:17,777 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:17,778 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:17,779 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:18,095 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:18,096 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:18,097 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:18,098 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:18,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:18,390 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:18,391 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:18,392 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:18,392 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:18,714 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:18,715 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:18,716 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:18,718 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:18,779 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:19,005 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:19,007 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:19,007 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:19,007 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:19,267 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:19,328 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:19,329 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:19,330 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:19,330 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:19,624 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:19,626 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:19,626 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:19,626 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:19,779 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:19,994 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:19,996 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:19,996 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:19,996 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:20,268 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:20,291 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:20,292 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:20,292 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:20,293 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:20,613 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:20,615 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:20,615 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:20,616 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:20,780 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:20,911 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:20,912 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:20,913 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:20,916 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:21,232 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:21,234 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:21,234 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:21,235 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:21,268 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:21,529 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:21,530 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:21,531 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:21,531 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:21,780 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:21,850 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:21,852 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:21,852 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:21,853 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:22,145 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:22,147 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:22,147 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:22,148 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:22,268 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:22,478 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:22,479 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:22,480 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:22,480 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:22,481 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:22,769 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:22,771 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:22,771 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:22,772 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:22,781 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:23,096 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:23,097 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:23,098 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:23,103 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:23,268 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:23,379 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:23,380 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:23,381 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:23,382 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:23,698 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:23,699 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:23,699 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:23,700 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:23,781 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:23,982 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:23,984 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:23,984 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:23,985 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:24,268 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:24,303 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:24,304 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:24,305 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:24,306 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:24,584 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:24,586 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:24,586 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:24,587 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:24,781 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:24,905 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:24,907 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:24,907 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:24,908 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:25,187 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:25,189 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:25,190 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:25,191 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:25,269 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:25,508 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:25,510 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:25,510 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:25,511 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:25,782 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:25,791 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:25,793 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:25,793 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:25,794 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:26,116 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:26,118 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:26,118 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:26,119 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:26,269 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:26,383 DEBUG   SystemMonitor:28711 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-27 01:39:26,387 DEBUG   SenderThread:28711 [sender.py:send():379] send: stats
+2024-07-27 01:39:26,409 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:26,410 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:26,411 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:26,411 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:26,731 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:26,733 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:26,733 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:26,734 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:26,782 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:27,023 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:27,025 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:27,025 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:27,026 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:27,269 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:27,350 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:27,352 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:27,352 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:27,353 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:27,640 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:27,642 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:27,642 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:27,642 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:27,643 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:27,783 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:27,963 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:27,965 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:27,965 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:27,966 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:28,254 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:28,256 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:28,257 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:28,258 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:28,269 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:28,584 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:28,586 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:28,587 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:28,588 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:28,783 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:28,878 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:28,880 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:28,880 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:28,881 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:29,237 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:29,239 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:29,239 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:29,240 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:29,269 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:29,532 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:29,534 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:29,534 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:29,535 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:29,589 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-27 01:39:29,590 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: stop_status
+2024-07-27 01:39:29,784 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:29,895 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:29,916 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:29,917 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:29,918 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:30,190 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:30,192 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:30,193 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:30,194 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:30,269 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:30,552 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:30,554 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:30,555 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:30,556 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:30,784 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:30,847 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:30,849 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:30,850 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:30,851 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:31,208 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:31,210 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:31,210 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:31,211 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:31,269 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:31,502 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:31,504 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:31,505 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:31,506 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:31,785 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:31,853 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:31,855 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:31,855 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:31,856 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:32,143 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:32,145 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:32,145 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:32,146 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:32,269 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:32,403 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:32,405 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:32,406 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:32,407 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:32,694 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:32,696 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:32,697 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:32,697 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:32,698 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:32,785 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:32,961 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:32,963 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:32,964 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:32,965 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:33,249 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:33,251 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:33,251 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:33,258 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:33,270 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:33,513 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:33,515 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:33,516 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:33,517 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:33,786 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:33,801 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:33,803 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:33,804 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:33,805 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:34,123 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:34,125 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:34,126 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:34,127 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:34,270 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:34,416 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:34,418 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:34,419 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:34,421 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:34,739 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:34,742 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:34,742 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:34,743 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:34,787 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:35,031 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:35,033 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:35,034 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:35,034 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:35,270 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:35,356 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:35,358 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:35,359 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:35,360 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:35,648 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:35,650 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:35,650 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:35,652 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:35,787 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:35,969 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:35,972 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:35,972 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:35,973 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:36,260 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:36,263 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:36,264 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:36,265 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:36,272 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:36,582 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:36,585 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:36,585 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:36,586 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:36,788 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:36,872 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:36,874 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:36,875 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:36,876 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:37,195 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:37,197 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:37,198 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:37,199 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:37,272 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:37,486 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:37,488 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:37,488 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:37,490 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:37,789 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:37,812 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:37,814 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:37,815 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:37,816 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:37,817 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:38,103 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:38,105 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:38,106 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:38,107 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:38,272 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:38,424 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:38,426 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:38,427 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:38,428 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:38,716 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:38,719 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:38,719 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:38,720 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:38,789 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:38,790 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:39:39,037 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:39,039 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:39,040 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:39,041 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:39,272 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:39,326 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:39,329 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:39,329 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:39,331 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:39,646 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:39,648 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:39,649 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:39,650 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:39,790 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:39,936 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:39,938 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:39,938 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:39,939 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:40,258 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:40,261 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:40,261 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:40,262 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:40,272 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:40,548 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:40,550 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:40,551 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:40,552 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:40,791 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:40,870 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:40,872 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:40,873 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:40,874 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:41,160 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:41,162 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:41,162 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:41,163 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:41,273 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:41,483 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:41,485 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:41,485 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:41,486 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:41,772 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:41,774 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:41,774 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:41,775 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:41,791 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:42,094 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:42,096 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:42,097 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:42,098 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:42,273 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:42,384 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:42,386 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:42,386 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:42,387 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:42,705 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:42,707 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:42,707 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:42,708 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:42,792 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:42,994 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:42,996 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:42,997 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:42,997 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:42,998 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:43,273 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:43,317 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:43,319 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:43,319 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:43,326 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:43,606 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:43,608 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:43,609 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:43,610 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:43,793 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:43,937 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:43,939 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:43,940 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:43,941 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:44,227 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:44,229 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:44,229 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:44,230 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:44,273 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:44,550 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:44,552 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:44,553 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:44,553 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:44,592 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-27 01:39:44,596 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: stop_status
+2024-07-27 01:39:44,793 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:44,840 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:44,974 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:44,975 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:44,977 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:45,160 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:45,162 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:45,162 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:45,163 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:45,273 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:45,451 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:45,453 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:45,453 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:45,454 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:45,772 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:45,773 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:45,774 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:45,775 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:45,794 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:46,063 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:46,064 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:46,065 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:46,066 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:46,273 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:46,384 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:46,385 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:46,386 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:46,387 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:46,673 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:46,675 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:46,675 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:46,676 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:46,794 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:46,998 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:47,000 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:47,000 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:47,001 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:47,273 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:47,288 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:47,290 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:47,290 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:47,291 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:47,608 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:47,610 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:47,610 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:47,611 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:47,795 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:47,899 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:47,900 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:47,901 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:47,902 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:48,220 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:48,222 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:48,223 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:48,223 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:48,224 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:48,273 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:48,502 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:48,503 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:48,504 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:48,505 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:48,795 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:48,823 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:48,824 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:48,825 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:48,826 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:49,105 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:49,107 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:49,107 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:49,108 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:49,274 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:49,430 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:49,431 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:49,432 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:49,433 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:49,716 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:49,717 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:49,718 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:49,719 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:49,796 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:50,089 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:50,091 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:50,092 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:50,093 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:50,274 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:50,379 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:50,381 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:50,382 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:50,382 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:50,756 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:50,757 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:50,758 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:50,759 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:50,796 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:51,045 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:51,047 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:51,048 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:51,049 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:51,275 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:51,423 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:51,425 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:51,426 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:51,427 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:51,712 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:51,714 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:51,714 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:51,715 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:51,796 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:52,085 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:52,087 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:52,088 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:52,089 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:52,275 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:52,373 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:52,374 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:52,375 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:52,376 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:52,721 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:52,722 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:52,723 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:52,724 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:52,797 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:53,003 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:53,004 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:53,005 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:53,006 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:53,275 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:53,301 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:53,302 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:53,302 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:53,303 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:53,304 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:53,585 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:53,592 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:53,593 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:53,599 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:53,797 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:53,891 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:53,892 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:53,892 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:53,893 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:54,172 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:54,174 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:54,174 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:54,175 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:54,275 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:54,439 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:54,441 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:54,441 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:54,442 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:54,722 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:54,724 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:54,725 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:54,726 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:54,798 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:54,988 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:54,989 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:54,990 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:54,991 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:55,270 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:55,271 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:55,272 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:55,273 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:55,281 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:55,534 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:55,536 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:55,537 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:55,538 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:55,798 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:55,813 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:55,815 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:55,816 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:55,817 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:56,077 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:56,079 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:56,080 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:56,081 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:56,282 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:56,359 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:56,360 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:56,361 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:56,362 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:56,391 DEBUG   SenderThread:28711 [sender.py:send():379] send: stats
+2024-07-27 01:39:56,620 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:56,622 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:56,623 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:56,624 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:56,799 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:56,902 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:56,904 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:56,905 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:56,906 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:57,156 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:57,158 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:57,158 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:57,159 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:57,282 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:57,438 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:57,440 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:57,441 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:57,442 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:57,758 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:57,760 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:57,761 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:57,761 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:57,799 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:58,041 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:58,043 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:58,043 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:58,044 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:58,282 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:58,363 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:58,365 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:58,365 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:58,366 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:39:58,367 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:58,643 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:58,645 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:58,646 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:58,646 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:58,800 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:58,904 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:58,906 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:58,906 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:58,907 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:59,183 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:59,185 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:59,185 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:59,186 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:59,282 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:39:59,441 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:59,443 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:39:59,443 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:39:59,444 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:39:59,589 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-27 01:39:59,590 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: stop_status
+2024-07-27 01:39:59,719 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:39:59,800 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:39:59,970 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:00,007 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:00,008 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:00,009 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:00,010 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:00,010 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:00,011 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:00,250 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:00,252 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:00,252 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:00,253 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:00,282 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:00,508 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:00,510 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:00,511 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:00,511 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:00,789 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:00,790 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:00,791 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:00,792 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:00,800 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:01,051 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:01,053 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:01,054 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:01,055 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:01,282 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:01,332 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:01,334 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:01,334 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:01,335 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:01,590 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:01,592 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:01,593 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:01,594 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:01,801 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:01,871 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:01,873 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:01,874 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:01,874 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:02,141 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:02,142 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:02,143 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:02,144 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:02,282 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:02,423 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:02,425 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:02,425 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:02,426 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:02,688 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:02,690 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:02,690 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:02,691 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:02,801 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:02,966 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:02,968 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:02,968 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:02,969 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:03,223 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:03,225 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:03,225 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:03,226 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:03,283 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:03,506 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:03,507 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:03,508 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:03,508 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:40:03,510 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:03,801 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:03,816 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:03,818 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:03,819 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:03,825 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:04,100 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:04,102 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:04,102 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:04,103 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:04,284 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:04,422 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:04,424 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:04,425 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:04,426 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:04,706 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:04,708 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:04,708 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:04,709 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:04,802 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:05,030 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:05,032 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:05,032 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:05,033 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:05,283 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:05,314 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:05,316 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:05,317 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:05,317 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:05,639 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:05,641 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:05,641 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:05,642 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:05,802 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:05,922 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:05,925 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:05,926 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:05,927 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:06,246 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:06,248 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:06,248 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:06,249 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:06,283 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:06,529 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:06,531 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:06,531 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:06,532 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:06,803 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:06,804 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:40:06,850 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:06,852 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:06,853 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:06,854 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:07,134 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:07,136 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:07,136 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:07,137 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:07,283 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:07,457 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:07,459 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:07,459 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:07,460 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:07,740 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:07,742 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:07,743 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:07,743 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:07,803 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:08,065 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:08,067 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:08,067 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:08,068 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:08,284 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:08,356 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:08,358 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:08,358 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:08,359 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:08,677 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:08,679 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:08,680 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:08,680 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:40:08,681 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:08,804 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:08,971 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:08,973 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:08,973 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:08,973 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:09,283 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:09,286 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:09,286 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:09,286 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:09,287 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:09,575 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:09,577 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:09,577 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:09,577 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:09,804 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:09,879 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:09,881 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:09,881 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:09,881 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:10,170 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:10,172 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:10,172 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:10,173 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:10,284 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:10,475 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:10,477 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:10,477 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:10,478 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:10,767 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:10,768 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:10,769 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:10,769 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:10,804 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:11,069 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:11,071 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:11,072 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:11,073 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:11,284 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:11,361 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:11,363 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:11,363 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:11,364 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:11,665 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:11,667 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:11,667 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:11,668 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:11,805 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:11,957 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:11,958 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:11,959 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:11,960 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:12,254 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:12,256 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:12,257 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:12,258 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:12,284 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:12,548 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:12,550 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:12,550 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:12,550 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:12,806 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:12,845 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:12,847 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:12,848 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:12,848 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:13,137 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:13,139 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:13,140 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:13,140 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:13,285 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:13,428 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:13,430 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:13,430 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:13,430 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:13,717 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:13,719 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:13,719 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:13,720 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:40:13,721 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:13,806 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:14,006 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:14,007 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:14,008 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:14,014 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:14,285 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:14,296 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:14,298 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:14,298 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:14,299 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:14,581 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:14,583 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:14,583 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:14,584 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:14,589 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-27 01:40:14,590 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: stop_status
+2024-07-27 01:40:14,806 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:14,872 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:15,000 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:15,001 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:15,002 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:15,167 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:15,169 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:15,170 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:15,171 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:15,285 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:15,468 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:15,470 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:15,471 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:15,472 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:15,755 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:15,757 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:15,758 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:15,759 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:15,807 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:16,056 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:16,058 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:16,058 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:16,059 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:16,285 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:16,345 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:16,347 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:16,347 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:16,348 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:16,644 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:16,647 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:16,647 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:16,648 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:16,808 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:16,919 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:16,921 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:16,922 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:16,923 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:17,219 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:17,221 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:17,222 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:17,223 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:17,285 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:17,503 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:17,505 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:17,505 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:17,506 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:17,797 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:17,799 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:17,800 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:17,801 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:17,808 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:18,079 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:18,082 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:18,082 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:18,083 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:18,285 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:18,369 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:18,372 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:18,372 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:18,373 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:18,657 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:18,659 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:18,659 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:18,660 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:18,811 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:18,946 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:18,948 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:18,949 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:18,950 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:40:18,950 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:19,225 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:19,227 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:19,227 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:19,228 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:19,285 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:19,515 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:19,517 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:19,518 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:19,518 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:19,806 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:19,808 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:19,809 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:19,810 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:19,811 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:20,099 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:20,100 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:20,101 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:20,102 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:20,286 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:20,380 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:20,382 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:20,382 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:20,383 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:20,668 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:20,670 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:20,670 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:20,671 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:20,819 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:20,944 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:20,946 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:20,947 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:20,948 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:21,235 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:21,237 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:21,238 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:21,239 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:21,286 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:21,526 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:21,528 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:21,529 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:21,530 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:21,815 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:21,817 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:21,818 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:21,819 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:21,820 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:22,072 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:22,074 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:22,075 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:22,076 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:22,286 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:22,360 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:22,361 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:22,362 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:22,363 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:22,628 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:22,630 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:22,630 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:22,631 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:22,827 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:22,912 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:22,914 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:22,914 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:22,915 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:23,163 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:23,165 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:23,166 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:23,167 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:23,286 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:23,448 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:23,450 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:23,450 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:23,451 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:23,702 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:23,704 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:23,705 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:23,706 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:23,828 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:23,988 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:23,990 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:23,991 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:23,992 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:40:23,993 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:24,246 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:24,248 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:24,249 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:24,256 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:24,286 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-27 01:40:24,541 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-27 01:40:24,542 DEBUG   SenderThread:28711 [sender.py:send():379] send: history
+2024-07-27 01:40:24,543 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: summary_record
+2024-07-27 01:40:24,544 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:24,836 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:24,975 DEBUG   SenderThread:28711 [sender.py:send():379] send: exit
+2024-07-27 01:40:24,975 INFO    SenderThread:28711 [sender.py:send_exit():586] handling exit code: 255
+2024-07-27 01:40:24,975 INFO    SenderThread:28711 [sender.py:send_exit():588] handling runtime: 118
+2024-07-27 01:40:24,976 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:24,977 INFO    SenderThread:28711 [sender.py:send_exit():594] send defer
+2024-07-27 01:40:24,977 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:24,977 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-27 01:40:24,978 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:24,978 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-27 01:40:24,978 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 1
+2024-07-27 01:40:24,978 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:24,979 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-27 01:40:24,979 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:24,979 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-27 01:40:24,979 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 2
+2024-07-27 01:40:24,980 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:24,980 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-27 01:40:24,980 INFO    HandlerThread:28711 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-27 01:40:24,980 DEBUG   SystemMonitor:28711 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-27 01:40:24,981 DEBUG   SystemMonitor:28711 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-27 01:40:24,986 INFO    HandlerThread:28711 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-27 01:40:24,987 INFO    HandlerThread:28711 [interfaces.py:finish():200] Joined disk monitor
+2024-07-27 01:40:25,029 INFO    HandlerThread:28711 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-27 01:40:25,030 INFO    HandlerThread:28711 [interfaces.py:finish():200] Joined memory monitor
+2024-07-27 01:40:25,030 INFO    HandlerThread:28711 [interfaces.py:finish():200] Joined network monitor
+2024-07-27 01:40:25,032 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:25,032 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-27 01:40:25,032 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 3
+2024-07-27 01:40:25,033 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:25,033 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-27 01:40:25,033 DEBUG   SenderThread:28711 [sender.py:send():379] send: stats
+2024-07-27 01:40:25,036 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:25,036 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-27 01:40:25,036 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 4
+2024-07-27 01:40:25,037 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:25,037 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-27 01:40:25,037 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:25,037 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-27 01:40:25,037 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 5
+2024-07-27 01:40:25,038 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:25,038 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-27 01:40:25,039 DEBUG   SenderThread:28711 [sender.py:send():379] send: summary
+2024-07-27 01:40:25,040 INFO    SenderThread:28711 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-27 01:40:25,040 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:25,041 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-27 01:40:25,041 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 6
+2024-07-27 01:40:25,041 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:25,041 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-27 01:40:25,041 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:25,042 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-27 01:40:25,042 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 7
+2024-07-27 01:40:25,042 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:40:25,042 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:25,042 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-27 01:40:25,043 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:25,043 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-27 01:40:25,836 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:25,962 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-27 01:40:26,837 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:40:28,662 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 8
+2024-07-27 01:40:28,662 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: poll_exit
+2024-07-27 01:40:28,662 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:28,663 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-27 01:40:28,664 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:28,664 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-27 01:40:28,664 INFO    SenderThread:28711 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-27 01:40:28,665 INFO    SenderThread:28711 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-27 01:40:28,711 INFO    SenderThread:28711 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-27 01:40:28,716 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 9
+2024-07-27 01:40:28,718 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:28,718 DEBUG   SenderThread:28711 [sender.py:send():379] send: artifact
+2024-07-27 01:40:28,718 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-27 01:40:28,839 INFO    Thread-12 :28711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:40:28,965 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-27 01:40:30,548 INFO    SenderThread:28711 [sender.py:send_artifact():1530] sent artifact job-git_github.com_MiRECoFu_Transformotion.git_trainers_train_transformotion.py - {'id': 'QXJ0aWZhY3Q6OTU2MjQwNzky', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMTg0OTQwMw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTAyMjY3MTAyNg==', 'versionIndex': 32}}}
+2024-07-27 01:40:30,548 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:30,548 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-27 01:40:30,549 INFO    SenderThread:28711 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-27 01:40:30,549 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: status_report
+2024-07-27 01:40:30,840 INFO    SenderThread:28711 [dir_watcher.py:finish():388] scan: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files
+2024-07-27 01:40:30,841 INFO    SenderThread:28711 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/config.yaml config.yaml
+2024-07-27 01:40:30,841 INFO    SenderThread:28711 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/conda-environment.yaml conda-environment.yaml
+2024-07-27 01:40:30,842 INFO    SenderThread:28711 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-metadata.json wandb-metadata.json
+2024-07-27 01:40:30,842 INFO    SenderThread:28711 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/requirements.txt requirements.txt
+2024-07-27 01:40:30,843 INFO    SenderThread:28711 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log output.log
+2024-07-27 01:40:30,853 INFO    SenderThread:28711 [dir_watcher.py:finish():402] scan save: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json wandb-summary.json
+2024-07-27 01:40:30,859 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 10
+2024-07-27 01:40:30,860 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: poll_exit
+2024-07-27 01:40:30,865 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:30,872 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-27 01:40:30,874 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:30,874 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-27 01:40:30,874 INFO    SenderThread:28711 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-27 01:40:30,967 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-27 01:40:30,968 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: poll_exit
+2024-07-27 01:40:31,597 INFO    wandb-upload_1:28711 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/config.yaml
+2024-07-27 01:40:31,969 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-27 01:40:31,970 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: poll_exit
+2024-07-27 01:40:32,123 INFO    wandb-upload_3:28711 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/requirements.txt
+2024-07-27 01:40:32,209 INFO    wandb-upload_2:28711 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/conda-environment.yaml
+2024-07-27 01:40:32,651 INFO    wandb-upload_5:28711 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/wandb-summary.json
+2024-07-27 01:40:32,788 INFO    wandb-upload_0:28711 [upload_job.py:push():130] Uploaded file /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/files/output.log
+2024-07-27 01:40:32,971 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-27 01:40:32,972 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: poll_exit
+2024-07-27 01:40:32,988 INFO    Thread-11 :28711 [sender.py:transition_state():614] send defer: 11
+2024-07-27 01:40:32,989 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:32,989 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-27 01:40:32,990 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:32,990 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-27 01:40:32,991 INFO    SenderThread:28711 [file_pusher.py:join():175] waiting for file pusher
+2024-07-27 01:40:32,991 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 12
+2024-07-27 01:40:32,992 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: defer
+2024-07-27 01:40:32,992 INFO    HandlerThread:28711 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-27 01:40:32,992 DEBUG   SenderThread:28711 [sender.py:send_request():406] send_request: defer
+2024-07-27 01:40:32,993 INFO    SenderThread:28711 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-27 01:40:32,993 INFO    SenderThread:28711 [file_stream.py:finish():601] file stream finish called
+2024-07-27 01:40:33,291 WARNING StreamThr :28711 [internal.py:is_dead():414] Internal process exiting, parent pid 28673 disappeared
+2024-07-27 01:40:33,292 ERROR   StreamThr :28711 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-07-27 01:40:33,972 DEBUG   HandlerThread:28711 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-27 01:40:33,973 INFO    HandlerThread:28711 [handler.py:finish():882] shutting down handler
+2024-07-27 01:40:33,973 INFO    WriterThread:28711 [datastore.py:close():296] close: /root/Transformotion/wandb/run-20240727_013824-uza2ik2c/run-uza2ik2c.wandb
+2024-07-27 01:40:34,554 INFO    SenderThread:28711 [file_stream.py:finish():605] file stream finish is done
+2024-07-27 01:40:34,554 INFO    SenderThread:28711 [sender.py:transition_state():614] send defer: 13
+2024-07-27 01:40:34,554 INFO    SenderThread:28711 [sender.py:finish():1608] shutting down sender
+2024-07-27 01:40:34,554 INFO    SenderThread:28711 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-27 01:40:34,555 INFO    SenderThread:28711 [file_pusher.py:join():175] waiting for file pusher

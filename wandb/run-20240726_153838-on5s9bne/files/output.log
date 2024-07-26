@@ -1,0 +1,52 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+pred_pose_eval===>torch.Size([64, 196, 263])
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f791231ed40>
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1203, in __del__
+    self._shutdown_workers()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1177, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/process.py", line 140, in join
+    res = self._popen.wait(timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/popen_fork.py", line 45, in wait
+    if not wait([self.sentinel], timeout):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/connection.py", line 921, in wait
+    ready = selector.select(timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 608, in evaluation_transformer
+    pred_pose = pred_poses[k:k+1]
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/tools.py", line 42, in inner
+    out = fn(model, *args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 279, in generate
+    logits, mems = self.forward(prompt_texts, generated, m_lens, labels=None, mems=None, is_generating=True)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 198, in forward
+    ret, pred_hid = self.seqTransDecoderXL(is_generating, prompt_logits.unsqueeze(0), motion_ids.permute(1, 0), labels.permute(1, 0), *mems)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 620, in forward
+    hidden, new_mems = self._forward(is_generate, cond_emb, data, mems=mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 591, in _forward
+    self.r_r_bias, dec_attn_mask=dec_attn_mask, mems=mems_i)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 418, in forward
+    output = self.pos_ff(output)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 140, in forward
+    output = self.layer_norm(inp + core_out)
+KeyboardInterrupt

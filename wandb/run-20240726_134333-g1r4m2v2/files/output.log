@@ -1,0 +1,40 @@
+Total Epochs: 1000, Total Iters: 383000
+Iters Per Epoch, Training: 0383, Validation: 023
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+motion motion_ids ========================+> tensor([[242, 892,  93,  ..., 894,  26, 278],
+        [524, 312, 720,  ..., 967, 524, 743],
+        [216, 415, 637,  ..., 218, 568, 124],
+        ...,
+        [675, 966, 780,  ..., 686, 387, 541],
+        [824, 228, 909,  ..., 457, 731, 187],
+        [227, 424, 356,  ..., 310, 477, 373]], device='cuda:0')
+ labels========================+> tensor([[837, 377, 760,  ..., 996, 996, 996],
+        [136, 577, 577,  ..., 996, 996, 996],
+        [545, 545, 545,  ..., 309, 309, 309],
+        ...,
+        [735, 463, 874,  ..., 996, 996, 996],
+        [950, 963, 963,  ..., 996, 996, 996],
+        [799, 719, 719,  ..., 996, 996, 996]], device='cuda:0')
+motion pred_motions ========================+> torch.Size([64, 196, 263])
+ labels========================+> torch.Size([64, 196])
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 146, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 465, in evaluation_mask_transformer
+    m_length)
+  File "/root/Transformotion/trainers/../models/t2m_eval_wrapper.py", line 77, in get_co_embeddings
+    motion_embedding = self.motion_encoder(movements, m_lens)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/t2m_eval_modules.py", line 176, in forward
+    emb = pack_padded_sequence(input_embs, cap_lens, batch_first=True)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/utils/rnn.py", line 244, in pack_padded_sequence
+    _VF._pack_padded_sequence(input, lengths, batch_first)
+RuntimeError: `lengths` array must be sorted in decreasing order when `enforce_sorted` is True. You can pass `enforce_sorted=False` to pack_padded_sequence and/or pack_sequence to sidestep this requirement if you do not need ONNX exportability.

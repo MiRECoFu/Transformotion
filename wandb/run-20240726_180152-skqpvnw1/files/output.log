@@ -1,0 +1,245 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+--> 	 Eva. ep 0 :, FID. 68.0309, Diversity Real. 9.7414, Diversity. 1.7835, R_precision_real. [0.01902174 0.03940217 0.05978261], R_precision. [0.01902174 0.02921196 0.04144022], matching_score_real. 9.385485980821693, matching_score_pred. 8.850271846937096
+--> --> 	 FID Improved from 100.00000 to 68.03092 !!!
+--> --> 	 matching_score Improved from 100.00000 to 8.85027 !!!
+--> --> 	 Diversity Improved from 100.00000 to 1.78349 !!!
+--> --> 	 Top1 Improved from 0.0000 to 0.0190 !!!
+--> --> 	 Top2 Improved from 0.0000 to 0.0292 !!!
+--> --> 	 Top3 Improved from 0.0000 to 0.0414 !!!
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it: 0-  49 niter:    50  86m 46s (- 1994050m 45s) completed:  0%) loss: 4.6974  acc: 0.1645  lr: 0.0002
+ep/it: 0-  99 niter:   100  87m 17s (- 1002913m 38s) completed:  0%) loss: 2.6700  acc: 0.3908  lr: 0.0002
+ep/it: 0- 149 niter:   150  87m 48s (- 672526m 42s) completed:  0%) loss: 2.1426  acc: 0.4736  lr: 0.0002
+ep/it: 0- 199 niter:   200  88m 19s (- 507322m 4s) completed:  0%) loss: 1.8975  acc: 0.5178  lr: 0.0002
+ep/it: 0- 249 niter:   250  88m 50s (- 408191m 57s) completed:  0%) loss: 1.7400  acc: 0.5534  lr: 0.0002
+ep/it: 0- 299 niter:   300  89m 21s (- 342141m 23s) completed:  0%) loss: 1.6698  acc: 0.5683  lr: 0.0002
+ep/it: 0- 349 niter:   350  89m 51s (- 294928m 8s) completed:  0%) loss: 1.5986  acc: 0.5831  lr: 0.0002
+ep/it: 1-  16 niter:   400  90m 27s (- 259732m 53s) completed:  0%) loss: 1.5627  acc: 0.5914  lr: 0.0002
+ep/it: 1-  66 niter:   450  90m 58s (- 232181m 3s) completed:  0%) loss: 1.5140  acc: 0.6026  lr: 0.0002
+ep/it: 1- 116 niter:   500  91m 28s (- 210135m 6s) completed:  0%) loss: 1.4982  acc: 0.6060  lr: 0.0002
+ep/it: 1- 166 niter:   550  92m 2s (- 192200m 50s) completed:  0%) loss: 1.4602  acc: 0.6158  lr: 0.0002
+ep/it: 1- 216 niter:   600  92m 33s (- 177163m 42s) completed:  0%) loss: 1.4469  acc: 0.6172  lr: 0.0002
+ep/it: 1- 266 niter:   650  93m 4s (- 164438m 22s) completed:  0%) loss: 1.4317  acc: 0.6234  lr: 0.0002
+ep/it: 1- 316 niter:   700  93m 35s (- 153531m 59s) completed:  0%) loss: 1.4065  acc: 0.6294  lr: 0.0002
+ep/it: 1- 366 niter:   750  94m 6s (- 144075m 54s) completed:  0%) loss: 1.4175  acc: 0.6273  lr: 0.0002
+ep/it: 2-  33 niter:   800  94m 40s (- 135889m 24s) completed:  0%) loss: 1.3846  acc: 0.6285  lr: 0.0002
+ep/it: 2-  83 niter:   850  95m 11s (- 128589m 10s) completed:  0%) loss: 1.3619  acc: 0.6366  lr: 0.0002
+ep/it: 2- 133 niter:   900  95m 42s (- 122097m 55s) completed:  0%) loss: 1.3542  acc: 0.6359  lr: 0.0002
+ep/it: 2- 183 niter:   950  96m 13s (- 116286m 44s) completed:  0%) loss: 1.3435  acc: 0.6389  lr: 0.0002
+ep/it: 2- 233 niter:  1000  96m 45s (- 111073m 55s) completed:  0%) loss: 1.3476  acc: 0.6389  lr: 0.0002
+ep/it: 2- 283 niter:  1050  97m 20s (- 106416m 50s) completed:  0%) loss: 1.3397  acc: 0.6404  lr: 0.0002
+ep/it: 2- 333 niter:  1100  97m 51s (- 102122m 53s) completed:  0%) loss: 1.3273  acc: 0.6409  lr: 0.0002
+ep/it: 3-   0 niter:  1150  98m 26s (- 98265m 9s) completed:  0%) loss: 1.3138  acc: 0.6461  lr: 0.0002
+ep/it: 3-  50 niter:  1200  98m 57s (- 94656m 7s) completed:  0%) loss: 1.2746  acc: 0.6517  lr: 0.0002
+ep/it: 3- 100 niter:  1250  99m 28s (- 91338m 8s) completed:  0%) loss: 1.2973  acc: 0.6473  lr: 0.0002
+ep/it: 3- 150 niter:  1300  99m 59s (- 88280m 35s) completed:  0%) loss: 1.2968  acc: 0.6480  lr: 0.0002
+ep/it: 3- 200 niter:  1350  100m 30s (- 85442m 39s) completed:  0%) loss: 1.2869  acc: 0.6489  lr: 0.0002
+ep/it: 3- 250 niter:  1400  101m 1s (- 82810m 7s) completed:  0%) loss: 1.2746  acc: 0.6526  lr: 0.0002
+ep/it: 3- 300 niter:  1450  101m 31s (- 80345m 21s) completed:  0%) loss: 1.2915  acc: 0.6487  lr: 0.0002
+ep/it: 3- 350 niter:  1500  102m 2s (- 78062m 7s) completed:  0%) loss: 1.2750  acc: 0.6528  lr: 0.0002
+ep/it: 4-  17 niter:  1550  102m 41s (- 76017m 49s) completed:  0%) loss: 1.2814  acc: 0.6513  lr: 0.0002
+ep/it: 4-  67 niter:  1600  103m 11s (- 74007m 7s) completed:  0%) loss: 1.2530  acc: 0.6545  lr: 0.0002
+ep/it: 4- 117 niter:  1650  103m 42s (- 72118m 6s) completed:  0%) loss: 1.2618  acc: 0.6544  lr: 0.0002
+ep/it: 4- 167 niter:  1700  104m 13s (- 70340m 49s) completed:  0%) loss: 1.2368  acc: 0.6590  lr: 0.0002
+ep/it: 4- 217 niter:  1750  104m 44s (- 68667m 27s) completed:  0%) loss: 1.2474  acc: 0.6560  lr: 0.0002
+ep/it: 4- 267 niter:  1800  105m 16s (- 67095m 3s) completed:  0%) loss: 1.2531  acc: 0.6572  lr: 0.0002
+ep/it: 4- 317 niter:  1850  105m 47s (- 65599m 33s) completed:  0%) loss: 1.2509  acc: 0.6554  lr: 0.0002
+ep/it: 4- 367 niter:  1900  106m 19s (- 64190m 16s) completed:  0%) loss: 1.2335  acc: 0.6599  lr: 0.0002
+ep/it: 5-  34 niter:  1950  106m 55s (- 62895m 2s) completed:  0%) loss: 1.2389  acc: 0.6567  lr: 0.0002
+ep/it: 5-  84 niter:  2000  107m 26s (- 61618m 46s) completed:  0%) loss: 1.2228  acc: 0.6617  lr: 0.0002
+ep/it: 5- 134 niter:  2050  107m 59s (- 60422m 15s) completed:  0%) loss: 1.2234  acc: 0.6616  lr: 0.0002
+ep/it: 5- 184 niter:  2100  108m 31s (- 59266m 21s) completed:  0%) loss: 1.2188  acc: 0.6609  lr: 0.0002
+ep/it: 5- 234 niter:  2150  109m 1s (- 58154m 26s) completed:  0%) loss: 1.2232  acc: 0.6608  lr: 0.0002
+ep/it: 5- 284 niter:  2200  109m 29s (- 57076m 6s) completed:  0%) loss: 1.2170  acc: 0.6637  lr: 0.0002
+ep/it: 5- 334 niter:  2250  109m 58s (- 56053m 1s) completed:  0%) loss: 1.2155  acc: 0.6624  lr: 0.0002
+ep/it: 6-   1 niter:  2300  110m 30s (- 55095m 58s) completed:  0%) loss: 1.2146  acc: 0.6617  lr: 0.0002
+ep/it: 6-  51 niter:  2350  110m 57s (- 54141m 32s) completed:  0%) loss: 1.2133  acc: 0.6627  lr: 0.0002
+ep/it: 6- 101 niter:  2400  111m 25s (- 53236m 23s) completed:  0%) loss: 1.1861  acc: 0.6650  lr: 0.0002
+ep/it: 6- 151 niter:  2450  111m 53s (- 52365m 48s) completed:  0%) loss: 1.1862  acc: 0.6678  lr: 0.0002
+ep/it: 6- 201 niter:  2500  112m 22s (- 51534m 4s) completed:  0%) loss: 1.2142  acc: 0.6607  lr: 0.0002
+ep/it: 6- 251 niter:  2550  112m 53s (- 50754m 37s) completed:  0%) loss: 1.1903  acc: 0.6676  lr: 0.0002
+ep/it: 6- 301 niter:  2600  113m 21s (- 49982m 51s) completed:  0%) loss: 1.2019  acc: 0.6669  lr: 0.0002
+ep/it: 6- 351 niter:  2650  113m 49s (- 49235m 49s) completed:  0%) loss: 1.2005  acc: 0.6643  lr: 0.0002
+ep/it: 7-  18 niter:  2700  114m 20s (- 48544m 49s) completed:  0%) loss: 1.1744  acc: 0.6683  lr: 0.0002
+ep/it: 7-  68 niter:  2750  114m 47s (- 47850m 39s) completed:  0%) loss: 1.1722  acc: 0.6710  lr: 0.0002
+ep/it: 7- 118 niter:  2800  115m 16s (- 47186m 5s) completed:  0%) loss: 1.1779  acc: 0.6690  lr: 0.0002
+ep/it: 7- 168 niter:  2850  115m 44s (- 46546m 13s) completed:  0%) loss: 1.1722  acc: 0.6703  lr: 0.0002
+ep/it: 7- 218 niter:  2900  116m 12s (- 45926m 5s) completed:  0%) loss: 1.1903  acc: 0.6688  lr: 0.0002
+ep/it: 7- 268 niter:  2950  116m 40s (- 45330m 9s) completed:  0%) loss: 1.1841  acc: 0.6681  lr: 0.0002
+ep/it: 7- 318 niter:  3000  117m 8s (- 44751m 13s) completed:  0%) loss: 1.1884  acc: 0.6642  lr: 0.0002
+ep/it: 7- 368 niter:  3050  117m 39s (- 44204m 35s) completed:  0%) loss: 1.1803  acc: 0.6665  lr: 0.0002
+ep/it: 8-  35 niter:  3100  118m 12s (- 43693m 58s) completed:  0%) loss: 1.1842  acc: 0.6671  lr: 0.0002
+ep/it: 8-  85 niter:  3150  118m 37s (- 43152m 20s) completed:  0%) loss: 1.1508  acc: 0.6732  lr: 0.0002
+ep/it: 8- 135 niter:  3200  119m 3s (- 42629m 2s) completed:  0%) loss: 1.1598  acc: 0.6694  lr: 0.0002
+ep/it: 8- 185 niter:  3250  119m 28s (- 42119m 45s) completed:  0%) loss: 1.1703  acc: 0.6683  lr: 0.0002
+ep/it: 8- 235 niter:  3300  119m 55s (- 41633m 0s) completed:  0%) loss: 1.1539  acc: 0.6740  lr: 0.0002
+ep/it: 8- 285 niter:  3350  120m 21s (- 41160m 17s) completed:  0%) loss: 1.1673  acc: 0.6707  lr: 0.0002
+ep/it: 8- 335 niter:  3400  120m 47s (- 40702m 2s) completed:  0%) loss: 1.1591  acc: 0.6729  lr: 0.0002
+ep/it: 9-   2 niter:  3450  121m 18s (- 40281m 23s) completed:  0%) loss: 1.1777  acc: 0.6675  lr: 0.0002
+ep/it: 9-  52 niter:  3500  121m 47s (- 39859m 31s) completed:  0%) loss: 1.1325  acc: 0.6753  lr: 0.0002
+ep/it: 9- 102 niter:  3550  122m 17s (- 39459m 52s) completed:  0%) loss: 1.1609  acc: 0.6724  lr: 0.0002
+ep/it: 9- 152 niter:  3600  122m 44s (- 39052m 49s) completed:  0%) loss: 1.1214  acc: 0.6802  lr: 0.0002
+ep/it: 9- 202 niter:  3650  123m 12s (- 38659m 38s) completed:  0%) loss: 1.1447  acc: 0.6725  lr: 0.0002
+ep/it: 9- 252 niter:  3700  123m 39s (- 38276m 44s) completed:  0%) loss: 1.1611  acc: 0.6712  lr: 0.0002
+ep/it: 9- 302 niter:  3750  124m 6s (- 37904m 42s) completed:  0%) loss: 1.1559  acc: 0.6719  lr: 0.0002
+ep/it: 9- 352 niter:  3800  124m 34s (- 37542m 49s) completed:  0%) loss: 1.1698  acc: 0.6701  lr: 0.0002
+ep/it:10-  19 niter:  3850  125m 7s (- 37216m 53s) completed:  0%) loss: 1.1323  acc: 0.6768  lr: 0.0002
+ep/it:10-  69 niter:  3900  125m 36s (- 36880m 46s) completed:  0%) loss: 1.1400  acc: 0.6751  lr: 0.0002
+ep/it:10- 119 niter:  3950  126m 7s (- 36563m 1s) completed:  0%) loss: 1.1340  acc: 0.6742  lr: 0.0002
+ep/it:10- 169 niter:  4000  126m 38s (- 36251m 3s) completed:  0%) loss: 1.1494  acc: 0.6731  lr: 0.0002
+ep/it:10- 219 niter:  4050  127m 13s (- 35965m 40s) completed:  0%) loss: 1.1291  acc: 0.6756  lr: 0.0002
+ep/it:10- 269 niter:  4100  127m 44s (- 35670m 10s) completed:  0%) loss: 1.1452  acc: 0.6744  lr: 0.0002
+ep/it:10- 319 niter:  4150  128m 15s (- 35383m 19s) completed:  0%) loss: 1.1346  acc: 0.6760  lr: 0.0002
+ep/it:10- 369 niter:  4200  128m 46s (- 35100m 52s) completed:  0%) loss: 1.1370  acc: 0.6760  lr: 0.0002
+ep/it:11-  36 niter:  4250  129m 22s (- 34846m 22s) completed:  0%) loss: 1.1102  acc: 0.6766  lr: 0.0002
+ep/it:11-  86 niter:  4300  129m 53s (- 34577m 39s) completed:  0%) loss: 1.1180  acc: 0.6794  lr: 0.0002
+ep/it:11- 136 niter:  4350  130m 24s (- 34313m 38s) completed:  0%) loss: 1.1196  acc: 0.6784  lr: 0.0002
+ep/it:11- 186 niter:  4400  130m 55s (- 34056m 23s) completed:  0%) loss: 1.1427  acc: 0.6736  lr: 0.0002
+ep/it:11- 236 niter:  4450  131m 26s (- 33807m 18s) completed:  0%) loss: 1.1204  acc: 0.6770  lr: 0.0002
+ep/it:11- 286 niter:  4500  131m 57s (- 33561m 53s) completed:  0%) loss: 1.1343  acc: 0.6747  lr: 0.0002
+ep/it:11- 336 niter:  4550  132m 31s (- 33334m 47s) completed:  0%) loss: 1.1238  acc: 0.6781  lr: 0.0002
+ep/it:12-   3 niter:  4600  133m 7s (- 33118m 14s) completed:  0%) loss: 1.1299  acc: 0.6752  lr: 0.0002
+ep/it:12-  53 niter:  4650  133m 37s (- 32885m 10s) completed:  0%) loss: 1.1059  acc: 0.6802  lr: 0.0002
+ep/it:12- 103 niter:  4700  134m 8s (- 32659m 44s) completed:  0%) loss: 1.1093  acc: 0.6780  lr: 0.0002
+ep/it:12- 153 niter:  4750  134m 39s (- 32438m 51s) completed:  0%) loss: 1.1245  acc: 0.6764  lr: 0.0002
+ep/it:12- 203 niter:  4800  135m 9s (- 32219m 28s) completed:  0%) loss: 1.1007  acc: 0.6801  lr: 0.0002
+ep/it:12- 253 niter:  4850  135m 40s (- 32008m 26s) completed:  0%) loss: 1.1206  acc: 0.6772  lr: 0.0002
+ep/it:12- 303 niter:  4900  136m 11s (- 31800m 46s) completed:  0%) loss: 1.1261  acc: 0.6731  lr: 0.0002
+ep/it:12- 353 niter:  4950  136m 41s (- 31594m 11s) completed:  0%) loss: 1.0905  acc: 0.6826  lr: 0.0002
+ep/it:13-  20 niter:  5000  137m 16s (- 31407m 43s) completed:  0%) loss: 1.1199  acc: 0.6772  lr: 0.0002
+ep/it:13-  70 niter:  5050  137m 50s (- 31225m 23s) completed:  0%) loss: 1.1078  acc: 0.6805  lr: 0.0002
+ep/it:13- 120 niter:  5100  138m 21s (- 31032m 39s) completed:  0%) loss: 1.0876  acc: 0.6817  lr: 0.0002
+ep/it:13- 170 niter:  5150  138m 52s (- 30845m 53s) completed:  0%) loss: 1.1033  acc: 0.6798  lr: 0.0002
+ep/it:13- 220 niter:  5200  139m 23s (- 30661m 12s) completed:  0%) loss: 1.1078  acc: 0.6799  lr: 0.0002
+ep/it:13- 270 niter:  5250  139m 55s (- 30482m 14s) completed:  0%) loss: 1.1105  acc: 0.6789  lr: 0.0002
+ep/it:13- 320 niter:  5300  140m 25s (- 30304m 15s) completed:  0%) loss: 1.0961  acc: 0.6815  lr: 0.0002
+ep/it:13- 370 niter:  5350  140m 56s (- 30127m 52s) completed:  0%) loss: 1.1057  acc: 0.6817  lr: 0.0002
+ep/it:14-  37 niter:  5400  141m 32s (- 29974m 27s) completed:  0%) loss: 1.0895  acc: 0.6815  lr: 0.0002
+ep/it:14-  87 niter:  5450  142m 3s (- 29807m 12s) completed:  0%) loss: 1.1072  acc: 0.6791  lr: 0.0002
+ep/it:14- 137 niter:  5500  142m 35s (- 29644m 45s) completed:  0%) loss: 1.0762  acc: 0.6851  lr: 0.0002
+ep/it:14- 187 niter:  5550  143m 9s (- 29494m 10s) completed:  0%) loss: 1.0937  acc: 0.6825  lr: 0.0002
+ep/it:14- 237 niter:  5600  143m 40s (- 29334m 33s) completed:  0%) loss: 1.0987  acc: 0.6796  lr: 0.0002
+ep/it:14- 287 niter:  5650  144m 11s (- 29177m 44s) completed:  0%) loss: 1.0874  acc: 0.6847  lr: 0.0002
+ep/it:14- 337 niter:  5700  144m 42s (- 29024m 26s) completed:  0%) loss: 1.1021  acc: 0.6804  lr: 0.0002
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+--> 	 Eva. ep 15 :, FID. 30.0473, Diversity Real. 9.2142, Diversity. 5.8745, R_precision_real. [0.01290761 0.02853261 0.04483696], R_precision. [0.0142663  0.02853261 0.04619565], matching_score_real. 9.468127665312394, matching_score_pred. 8.993804599927818
+--> --> 	 FID Improved from 68.03092 to 30.04729 !!!
+--> --> 	 Diversity Improved from 1.78349 to 5.87450 !!!
+--> --> 	 Top3 Improved from 0.0414 to 0.0462 !!!
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it:15-   4 niter:  5750  233m 36s (- 46448m 40s) completed:  0%) loss: 1.0963  acc: 0.6810  lr: 0.0002
+ep/it:15-  54 niter:  5800  234m 8s (- 46148m 36s) completed:  0%) loss: 1.0750  acc: 0.6877  lr: 0.0002
+ep/it:15- 104 niter:  5850  234m 38s (- 45852m 30s) completed:  0%) loss: 1.0753  acc: 0.6834  lr: 0.0002
+ep/it:15- 154 niter:  5900  235m 9s (- 45561m 9s) completed:  0%) loss: 1.0719  acc: 0.6852  lr: 0.0002
+ep/it:15- 204 niter:  5950  235m 40s (- 45274m 48s) completed:  0%) loss: 1.0840  acc: 0.6836  lr: 0.0002
+ep/it:15- 254 niter:  6000  236m 11s (- 44995m 58s) completed:  0%) loss: 1.0872  acc: 0.6825  lr: 0.0002
+ep/it:15- 304 niter:  6050  236m 46s (- 44731m 53s) completed:  0%) loss: 1.0794  acc: 0.6859  lr: 0.0002
+ep/it:15- 354 niter:  6100  237m 17s (- 44460m 19s) completed:  0%) loss: 1.1011  acc: 0.6793  lr: 0.0002
+ep/it:16-  21 niter:  6150  237m 53s (- 44206m 44s) completed:  0%) loss: 1.0943  acc: 0.6796  lr: 0.0002
+ep/it:16-  71 niter:  6200  238m 24s (- 43943m 10s) completed:  0%) loss: 1.0628  acc: 0.6875  lr: 0.0002
+ep/it:16- 121 niter:  6250  238m 54s (- 43682m 47s) completed:  0%) loss: 1.0743  acc: 0.6835  lr: 0.0002
+ep/it:16- 171 niter:  6300  239m 25s (- 43427m 5s) completed:  0%) loss: 1.0570  acc: 0.6896  lr: 0.0002
+ep/it:16- 221 niter:  6350  239m 57s (- 43178m 1s) completed:  0%) loss: 1.0825  acc: 0.6822  lr: 0.0002
+ep/it:16- 271 niter:  6400  240m 28s (- 42931m 49s) completed:  0%) loss: 1.0739  acc: 0.6838  lr: 0.0002
+ep/it:16- 321 niter:  6450  240m 59s (- 42688m 31s) completed:  0%) loss: 1.0872  acc: 0.6854  lr: 0.0002
+ep/it:16- 371 niter:  6500  241m 30s (- 42449m 36s) completed:  0%) loss: 1.0932  acc: 0.6814  lr: 0.0002
+ep/it:17-  38 niter:  6550  242m 9s (- 42237m 9s) completed:  0%) loss: 1.0751  acc: 0.6823  lr: 0.0002
+ep/it:17-  88 niter:  6600  242m 40s (- 42005m 12s) completed:  0%) loss: 1.0777  acc: 0.6843  lr: 0.0002
+ep/it:17- 138 niter:  6650  243m 11s (- 41776m 12s) completed:  0%) loss: 1.0575  acc: 0.6902  lr: 0.0002
+ep/it:17- 188 niter:  6700  243m 42s (- 41550m 26s) completed:  0%) loss: 1.0719  acc: 0.6860  lr: 0.0002
+ep/it:17- 238 niter:  6750  244m 13s (- 41328m 30s) completed:  0%) loss: 1.0739  acc: 0.6853  lr: 0.0002
+ep/it:17- 288 niter:  6800  244m 45s (- 41111m 13s) completed:  0%) loss: 1.0731  acc: 0.6863  lr: 0.0002
+ep/it:17- 338 niter:  6850  245m 17s (- 40898m 21s) completed:  0%) loss: 1.0675  acc: 0.6842  lr: 0.0002
+ep/it:18-   5 niter:  6900  245m 52s (- 40698m 3s) completed:  0%) loss: 1.0617  acc: 0.6872  lr: 0.0002
+ep/it:18-  55 niter:  6950  246m 24s (- 40489m 33s) completed:  0%) loss: 1.0591  acc: 0.6878  lr: 0.0002
+ep/it:18- 105 niter:  7000  246m 54s (- 40281m 56s) completed:  0%) loss: 1.0609  acc: 0.6866  lr: 0.0002
+ep/it:18- 155 niter:  7050  247m 29s (- 40088m 1s) completed:  0%) loss: 1.0685  acc: 0.6845  lr: 0.0002
+ep/it:18- 205 niter:  7100  248m 0s (- 39888m 11s) completed:  0%) loss: 1.0526  acc: 0.6890  lr: 0.0002
+ep/it:18- 255 niter:  7150  248m 32s (- 39690m 37s) completed:  0%) loss: 1.0473  acc: 0.6906  lr: 0.0002
+ep/it:18- 305 niter:  7200  249m 3s (- 39496m 39s) completed:  0%) loss: 1.0578  acc: 0.6858  lr: 0.0002
+ep/it:18- 355 niter:  7250  249m 33s (- 39302m 21s) completed:  0%) loss: 1.0851  acc: 0.6804  lr: 0.0002
+ep/it:19-  22 niter:  7300  250m 9s (- 39123m 52s) completed:  0%) loss: 1.0657  acc: 0.6854  lr: 0.0002
+ep/it:19-  72 niter:  7350  250m 40s (- 38935m 53s) completed:  0%) loss: 1.0535  acc: 0.6871  lr: 0.0002
+ep/it:19- 122 niter:  7400  251m 11s (- 38751m 46s) completed:  0%) loss: 1.0466  acc: 0.6883  lr: 0.0002
+ep/it:19- 172 niter:  7450  251m 43s (- 38570m 36s) completed:  0%) loss: 1.0532  acc: 0.6901  lr: 0.0002
+ep/it:19- 222 niter:  7500  252m 15s (- 38394m 9s) completed:  0%) loss: 1.0420  acc: 0.6914  lr: 0.0002
+ep/it:19- 272 niter:  7550  252m 50s (- 38225m 30s) completed:  0%) loss: 1.0615  acc: 0.6861  lr: 0.0002
+ep/it:19- 322 niter:  7600  253m 21s (- 38050m 30s) completed:  0%) loss: 1.0629  acc: 0.6854  lr: 0.0002
+ep/it:19- 372 niter:  7650  253m 52s (- 37877m 42s) completed:  0%) loss: 1.0723  acc: 0.6849  lr: 0.0002
+ep/it:20-  39 niter:  7700  254m 27s (- 37716m 58s) completed:  0%) loss: 1.0556  acc: 0.6872  lr: 0.0002
+ep/it:20-  89 niter:  7750  254m 58s (- 37548m 2s) completed:  0%) loss: 1.0260  acc: 0.6920  lr: 0.0002
+ep/it:20- 139 niter:  7800  255m 29s (- 37381m 11s) completed:  0%) loss: 1.0461  acc: 0.6897  lr: 0.0002
+ep/it:20- 189 niter:  7850  256m 0s (- 37216m 20s) completed:  0%) loss: 1.0281  acc: 0.6931  lr: 0.0002
+ep/it:20- 239 niter:  7900  256m 31s (- 37054m 10s) completed:  0%) loss: 1.0429  acc: 0.6901  lr: 0.0002
+ep/it:20- 289 niter:  7950  257m 2s (- 36893m 30s) completed:  0%) loss: 1.0602  acc: 0.6857  lr: 0.0002
+ep/it:20- 339 niter:  8000  257m 33s (- 36735m 5s) completed:  0%) loss: 1.0590  acc: 0.6878  lr: 0.0002
+ep/it:21-   6 niter:  8050  258m 13s (- 36598m 27s) completed:  0%) loss: 1.0460  acc: 0.6909  lr: 0.0002
+ep/it:21-  56 niter:  8100  258m 44s (- 36443m 7s) completed:  0%) loss: 1.0275  acc: 0.6928  lr: 0.0002
+ep/it:21- 106 niter:  8150  259m 15s (- 36290m 30s) completed:  0%) loss: 1.0242  acc: 0.6927  lr: 0.0002
+ep/it:21- 156 niter:  8200  259m 45s (- 36138m 45s) completed:  0%) loss: 1.0423  acc: 0.6900  lr: 0.0002
+ep/it:21- 206 niter:  8250  260m 16s (- 35989m 40s) completed:  0%) loss: 1.0211  acc: 0.6958  lr: 0.0002
+ep/it:21- 256 niter:  8300  260m 48s (- 35843m 23s) completed:  0%) loss: 1.0637  acc: 0.6836  lr: 0.0002
+ep/it:21- 306 niter:  8350  261m 19s (- 35697m 12s) completed:  0%) loss: 1.0603  acc: 0.6874  lr: 0.0002
+ep/it:21- 356 niter:  8400  261m 50s (- 35553m 26s) completed:  0%) loss: 1.0575  acc: 0.6860  lr: 0.0002
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 166, in train
+    loss, acc = self.update(batch_data=batch, mems=mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 102, in update
+    loss.backward()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt

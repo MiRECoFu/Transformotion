@@ -1,0 +1,80 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+motion motion_ids ========================+> tensor([[ 869,  900,  333,  748,  207,  129,  597, 1014,   82,  221,  409,  560,
+          726,  716,  619,  979,  924,  954,   79,  834,  525,  982,  503,  970,
+          956,  251,  923,  971,  675,  459,  785,  234,  860,  726, 1005,  803,
+          692,  643,  983,  342,  390,  165,  141,  671,  396,  143,  582,  572,
+          930,  315,  455,  732,  940,  750,  949,  499,  794,   91,  409,  401,
+          386,   75,  223,  584,  118,  724,  927,  932,  923,  827,  831,  136,
+          670,   12,  639,  990,  761,  547,  110,  183,  617,  647,  945,  123,
+           25,  477, 1010,  358,  963,  410,  188,  788,  215, 1015,  518,  671,
+           33,  863,  752,  131,   29,  135,  699,  258,  436,  110,  726,  785,
+          517,  373,  981,  391,  141,  952,  336,  165,  324,  819,  587,  853,
+          897,  234,   50,  508,  225,  367,  102,  618,  368,  740,  181,  103,
+          100,  740,  366,  304, 1021,  896,  634,  999,  539,  155,  979,  766,
+          458,  910,  900,  843,   17,  286,  449,  402,  306,  321,  904,  454,
+          543,  534,  552,  116,  675,  645, 1010,  475,    5,  618,  468,  953,
+          193,  670,  817,  486,  450,  100,  698, 1023,  591,  125,   11,  591,
+          870,  214,  100,  294,  866,  880,  511,  643,  952,  498,  628,  530,
+          921,  652,  953,  841]], device='cuda:0')
+ labels====> tensor([[691, 985, 789, 691, 691, 691, 691, 691, 798, 798, 874, 874, 874, 874,
+         620, 620, 620, 620, 874, 874, 874, 874, 988, 988, 988, 108, 947, 800,
+         350, 350, 350, 350, 350, 350, 350, 350, 350, 638, 350, 638, 638, 638,
+         638, 638, 638, 638, 638, 638, 763, 763, 763, 763, 763, 763, 763, 763,
+         763, 763, 763, 763, 763, 763, 763, 406, 406, 406, 406, 406, 406, 406,
+         406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406,
+         406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406,
+         763, 763, 763, 763, 763, 406, 763, 763, 393, 763, 763, 763, 763, 800,
+         800, 800, 228, 228, 228, 228,  29,  36, 691, 954, 954, 954, 954, 463,
+         874, 874, 874, 976, 286, 286, 286, 620, 620, 874, 874, 874, 874, 691,
+          29, 719,  29, 691, 613,  36,  36,  36,  29, 217, 954,  29,  29, 789,
+         789, 954, 691, 691, 691, 798, 798, 798, 874, 620, 620, 309, 309, 620,
+         620, 463, 691, 719, 730, 730,  29, 988, 638, 638, 108, 638, 638, 638,
+         350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350]],
+       device='cuda:0')
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 610, in evaluation_transformer
+    pred_pose = trans.generate(clip_text[k:k+1], m_length, motion_ids[k:k+1])
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/tools.py", line 42, in inner
+    out = fn(model, *args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 280, in generate
+    logits, mems = self.forward(prompt_texts, generated, m_lens, labels=labels[:, k:k+1], mems=None, is_generating=True)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 184, in forward
+    prompt_logits = self.encode_text(prompt_texts)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 166, in encode_text
+    feat_clip_text = self.clip_model.encode_text(text).float()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/model.py", line 348, in encode_text
+    x = self.transformer(x)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/model.py", line 203, in forward
+    return self.resblocks(x)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/model.py", line 190, in forward
+    x = x + self.attention(self.ln_1(x))
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/model.py", line 187, in attention
+    return self.attn(x, x, x, need_weights=False, attn_mask=self.attn_mask)[0]
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/activation.py", line 985, in forward
+    attn_mask=attn_mask)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/functional.py", line 4294, in multi_head_attention_forward
+    attn_output_weights = torch.bmm(q, k.transpose(1, 2))
+KeyboardInterrupt

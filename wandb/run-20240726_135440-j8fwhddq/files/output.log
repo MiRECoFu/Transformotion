@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 132, in train
+    epoch, it = self.resume(model_dir)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 107, in resume
+    assert len(unexpected_keys) == 0
+AssertionError

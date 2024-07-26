@@ -1,0 +1,330 @@
+Load model epoch:21 iterations:8426
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+pred_ids=======tensor([[909]], device='cuda:0'),
+generated========tensor([], device='cuda:0', size=(64, 0), dtype=torch.int64)
+pred_ids=======tensor([[909]], device='cuda:0'),
+generated========tensor([[909]], device='cuda:0')
+pred_ids=======tensor([[909]], device='cuda:0'),
+generated========tensor([[909, 909]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735]], device='cuda:0')
+pred_ids=======tensor([[735]], device='cuda:0'),
+generated========tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 608, in evaluation_transformer
+    pred_pose = trans.generate(clip_text[k:k+1], m_length)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/tools.py", line 42, in inner
+    out = fn(model, *args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 280, in generate
+    logits, mems = self.forward(prompt_texts, generated, m_lens, labels=None, mems=None, is_generating=True)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 184, in forward
+    prompt_logits = self.encode_text(prompt_texts)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 166, in encode_text
+    feat_clip_text = self.clip_model.encode_text(text).float()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/model.py", line 348, in encode_text
+    x = self.transformer(x)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/model.py", line 203, in forward
+    return self.resblocks(x)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/model.py", line 190, in forward
+    x = x + self.attention(self.ln_1(x))
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/model.py", line 187, in attention
+    return self.attn(x, x, x, need_weights=False, attn_mask=self.attn_mask)[0]
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/activation.py", line 985, in forward
+    attn_mask=attn_mask)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/functional.py", line 4319, in multi_head_attention_forward
+    attn_output = linear(attn_output, out_proj_weight, out_proj_bias)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/functional.py", line 1692, in linear
+    output = input.matmul(weight.t())
+KeyboardInterrupt

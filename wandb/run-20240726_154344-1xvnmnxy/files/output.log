@@ -1,0 +1,44 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+pred_pose_eval===>torch.Size([64, 196, 263])
+--> 	 Eva. ep 0 :, FID. 68.1519, Diversity Real. 9.7414, Diversity. 1.7902, R_precision_real. [0.01902174 0.03940217 0.05978261], R_precision. [0.01970109 0.03464674 0.046875  ], matching_score_real. 9.385485980821693, matching_score_pred. 8.848326268403426
+--> --> 	 FID Improved from 100.00000 to 68.15190 !!!
+--> --> 	 matching_score Improved from 100.00000 to 8.84833 !!!
+--> --> 	 Diversity Improved from 100.00000 to 1.79023 !!!
+--> --> 	 Top1 Improved from 0.0000 to 0.0197 !!!
+--> --> 	 Top2 Improved from 0.0000 to 0.0346 !!!
+--> --> 	 Top3 Improved from 0.0000 to 0.0469 !!!
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 733, in evaluation_transformer
+    data = pred_pose[rand_idx].detach().cpu().numpy()
+RuntimeError: CUDA error: device-side assert triggered

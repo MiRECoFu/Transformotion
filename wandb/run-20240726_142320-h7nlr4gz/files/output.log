@@ -1,0 +1,46 @@
+Load model epoch:0 iterations:383
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+motion motion_ids ========================+> tensor([[ 35, 127, 127,  ..., 127, 127, 127],
+        [384, 130, 130,  ..., 130, 130, 130],
+        [950, 963, 963,  ...,  93,  93,  93],
+        ...,
+        [136, 217, 217,  ..., 512, 512, 512],
+        [735,  36,  36,  ..., 874, 874, 691],
+        [912, 691,  29,  ..., 619, 619, 619]], device='cuda:0')
+ labels========================+> tensor([[837, 377, 760,  ..., 996, 996, 996],
+        [136, 577, 577,  ..., 996, 996, 996],
+        [545, 545, 545,  ..., 309, 309, 309],
+        ...,
+        [735, 463, 874,  ..., 996, 996, 996],
+        [950, 963, 963,  ..., 996, 996, 996],
+        [799, 719, 719,  ..., 996, 996, 996]], device='cuda:0')
+motion pred_motions ========================+> torch.Size([64, 196, 263])
+ labels========================+> torch.Size([64, 196])
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 458, in evaluation_mask_transformer
+    all_pred_motions = trans.generate(clip_text, m_length, motion_ids, temperature=1)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/tools.py", line 42, in inner
+    out = fn(model, *args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 494, in generate
+    logits, mems = self.forward(prompt_texts, generated, m_lens, labels[:,k:k+1], mems=None, is_generating=True)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 359, in forward
+    prompt_logits = self.encode_text(prompt_texts)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 340, in encode_text
+    text = clip.tokenize(raw_text, truncate=True).to(device)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/clip.py", line 243, in tokenize
+    result[i, :len(tokens)] = torch.tensor(tokens)
+KeyboardInterrupt

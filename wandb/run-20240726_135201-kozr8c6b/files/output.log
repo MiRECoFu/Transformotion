@@ -1,0 +1,88 @@
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+Total Epochs: 1000, Total Iters: 383000
+Iters Per Epoch, Training: 0383, Validation: 023
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+motion motion_ids ========================+> tensor([[242, 892,  93,  ..., 894,  26, 278],
+        [524, 312, 720,  ..., 967, 524, 743],
+        [216, 415, 637,  ..., 218, 568, 124],
+        ...,
+        [675, 966, 780,  ..., 686, 387, 541],
+        [824, 228, 909,  ..., 457, 731, 187],
+        [227, 424, 356,  ..., 310, 477, 373]], device='cuda:0')
+ labels========================+> tensor([[837, 377, 760,  ..., 996, 996, 996],
+        [136, 577, 577,  ..., 996, 996, 996],
+        [545, 545, 545,  ..., 309, 309, 309],
+        ...,
+        [735, 463, 874,  ..., 996, 996, 996],
+        [950, 963, 963,  ..., 996, 996, 996],
+        [799, 719, 719,  ..., 996, 996, 996]], device='cuda:0')
+motion pred_motions ========================+> torch.Size([64, 196, 263])
+ labels========================+> torch.Size([64, 196])
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+motion motion_ids ========================+> tensor([[ 773,  866,  341,  ...,  175,  142,  152],
+        [ 890,  721,  948,  ...,  349,  998,  129],
+        [ 106,  981,  918,  ...,  501,  714,   69],
+        ...,
+        [ 351,  253,  567,  ...,   87,  282,  908],
+        [1004,  606,  353,  ...,  266,  565,  141],
+        [ 680,  720,  263,  ...,  719,  114,  687]], device='cuda:0')
+ labels========================+> tensor([[950, 963, 963,  ..., 387, 387, 387],
+        [909, 591, 815,  ..., 996, 996, 996],
+        [912,  93,  93,  ...,  93,  93, 463],
+        ...,
+        [315, 777, 209,  ..., 633, 633, 653],
+        [652,  93,  93,  ..., 996, 996, 996],
+        [250, 250, 250,  ..., 250, 250, 250]], device='cuda:0')
+motion pred_motions ========================+> torch.Size([64, 196, 263])
+ labels========================+> torch.Size([64, 196])
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7fd53521ed40>
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1203, in __del__
+    self._shutdown_workers()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1177, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/process.py", line 140, in join
+    res = self._popen.wait(timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/popen_fork.py", line 45, in wait
+    if not wait([self.sentinel], timeout):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/multiprocessing/connection.py", line 921, in wait
+    ready = selector.select(timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 146, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 458, in evaluation_mask_transformer
+    all_pred_motions = trans.generate(clip_text, m_length, motion_ids, temperature=1)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/tools.py", line 42, in inner
+    out = fn(model, *args, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 494, in generate
+    logits, mems = self.forward(prompt_texts, generated, m_lens, labels[:,k:k+1], mems=None, is_generating=True)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 359, in forward
+    prompt_logits = self.encode_text(prompt_texts)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 340, in encode_text
+    text = clip.tokenize(raw_text, truncate=True).to(device)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/clip.py", line 230, in tokenize
+    all_tokens = [[sot_token] + _tokenizer.encode(text) + [eot_token] for text in texts]
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/clip.py", line 230, in <listcomp>
+    all_tokens = [[sot_token] + _tokenizer.encode(text) + [eot_token] for text in texts]
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/simple_tokenizer.py", line 123, in encode
+    text = whitespace_clean(basic_clean(text)).lower()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/clip/simple_tokenizer.py", line 57, in whitespace_clean
+    text = re.sub(r'\s+', ' ', text)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/regex/regex.py", line 277, in sub
+    pat = _compile(pattern, flags, ignore_unused, kwargs, True)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/regex/regex.py", line 507, in _compile
+    return _cache[pattern_key]
+KeyboardInterrupt

@@ -1,0 +1,168 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 3), dtype=torch.int64)
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+motion motion_ids ========================+> tensor([[ 890,  918,  369,  719,  203,  136,  618, 1014,   80,  212,  412,  591,
+          737,  696,  659,  987,  899,  951,   61,  884,  577,  992,  505,  991,
+          959,  245,  935,  974,  729,  458,  821,  279,  899,  732, 1002,  823,
+          710,  669,  982,  341,  378,  145,  144,  708,  405,  137,  576,  619,
+          937,  310,  499,  730,  941,  733,  959,  553,  799,  109,  414,  448,
+          388,   89,  247,  603,  101,  735,  941,  921,  929,  848,  839,  135,
+          653,   14,  654,  996,  770,  545,  101,  167,  657,  637,  957,   99,
+            9,  529, 1014,  381,  947,  461,  166,  831,  209, 1012,  520,  655,
+           37,  883,  733,  137,   21,  101,  710,  291,  445,  102,  755,  755,
+          518,  380,  968,  424,  133,  972,  360,  151,  343,  833,  580,  835,
+          888,  264,   50,  507,  220,  359,   87,  617,  423,  760,  164,  107,
+           99,  759,  385,  301, 1021,  899,  651,  995,  559,  145,  993,  748,
+          466,  899,  905,  852,    6,  294,  455,  415,  322,  326,  899,  446,
+          551,  537,  529,  122,  656,  628, 1020,  474,    4,  663,  509,  948,
+          213,  705,  812,  528,  461,  101,  697]], device='cuda:0')
+ labels====> tensor([[372, 147, 184, 653, 253, 263, 565, 565, 275, 348, 348,  71, 209, 690,
+         690, 690, 648, 604, 604, 277, 238, 814, 814, 633, 633, 633, 633, 635,
+         635, 565, 672, 565, 615, 275, 348, 348, 777, 348, 209, 777, 777, 690,
+         648, 648, 277, 277, 277, 648, 603, 231, 223, 653, 653, 653, 347, 710,
+         710, 309, 309, 309, 309, 309, 309, 309, 309, 620, 253, 253, 253, 253,
+         620, 463, 463, 726, 691, 691, 726, 726,  29,  36,  36,  36,  36, 237,
+         237, 849, 630,  37, 419, 703, 703, 985, 117, 468, 407, 517, 283, 626,
+         806, 806, 806, 806, 804, 806, 806, 630, 517, 517, 849, 517, 143, 703,
+         703, 985, 985, 703, 630, 407, 626, 201, 201, 806, 684, 684, 684, 806,
+         916, 916, 517,  37,  37, 517, 419,  59,  29, 710, 710, 730, 704, 463,
+         184, 184, 309, 309, 309, 253, 507, 263, 605, 253, 209, 209,  71,  71,
+         874, 286, 309, 710, 710, 726, 463, 264, 884, 884, 767, 767, 761, 761,
+         959, 613, 613, 613, 767, 463, 117, 985, 985, 629, 629, 255, 463, 184,
+         184, 184, 184, 184, 184, 620, 253, 999, 999, 999, 999, 999, 286, 463]],
+       device='cuda:0')
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 3), dtype=torch.int64)
+motion motion_ids ========================+> tensor([[ 596,  130,   15,  604,  910,  183,  101,  314,  874,  880,  529,  637,
+          940,  505,  651,  574,  893,  631,  979,  858,  989,  341, 1019,  545,
+          849,  188,  719,  750,  638,  900,  552, 1004,  866,  378,   59,  199,
+          690,  987,  204,  481, 1006,   70,  566,  651,  748,  592,  144,   99,
+          337,  572,  223,  994,  438,  357,  230,  741,  666,  126,   57,  670,
+          185,  939,  102,  770,  235,  867,  111, 1002,  952,  898,  298,  562,
+          247,  104,  566,  844,  503,   99, 1010,  645,  786,  658,  677,  823,
+          650,  206,  114,  507,  953,  773,  337,  827,  132,  884,   70,  274,
+          441, 1008,   48,  320,  840,  737,  485,  789,  334,  299,  638,  714,
+          200,   70,  767,  320,  835,  541,  495,  760,  826,  945,   39,  678,
+          279,    7,  697,  656,   57,  658,  534,  446,  467, 1013,  155,  410,
+          665,  955,  153,  231,  976,  171,  973,   29,  791,  201,  507,   27,
+          556,  123,  884,  378,  147,   55,  150,  339,  644,  440,   58,  493,
+          903,   50,  670, 1009,  711,    8,  898,  732,  698,  207,    6,   62,
+          960,  326,  192,  225,  647,  259,  529,  136,  393,  892,  111,  440,
+          543,  965,  170,  665,  687,   50,  631,  611,  238,  416,  968,  898,
+          144,  688,  545,  157]], device='cuda:0')
+ labels====> tensor([[539, 539, 539, 886, 886, 886, 886, 886, 539, 539, 886, 886, 886, 886,
+         205, 722, 539, 886, 886, 886, 886, 886, 886, 722, 886, 886, 886, 886,
+         886, 886, 886, 886, 205, 886, 886, 886, 886, 862, 886, 886, 886, 886,
+         886, 886, 691, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996]],
+       device='cuda:0')
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 3), dtype=torch.int64)
+motion motion_ids ========================+> tensor([[ 165,   73, 1005,  234, 1003,  590,  182,  373,  179,  542,  549,   99,
+          801,  390,  908,  134,  541,  193,   98,  368,  976,  962,  678,  241,
+          517,  915,  706,  189,  987,  118,  577,  939, 1017,  909,   30, 1019,
+         1008,  899,  315,  796,  575,  343,  911,  801,  871,  821,  231,  101,
+          992,  646,  211,  234,  274,  966,  304,  951,  175,  557,  434,    5,
+          813,  861,   32,  237,  745,  852,  325,  172,  285,  555,  299,  598,
+          653,  438,  211,  854,  356,  513, 1019,  642,  420,  231,  686,  190,
+          705,  557,  753, 1013,  271,  555,  801,  626,  343,  390,  542,  733,
+          393,  648,  525,  140, 1019,  154,  419,  883,  200,  378,  835,  627,
+          390,  151,  408,   56,  325,   31,  706,  351,  338,  324,  113,  572,
+          755,  714,  824,   89,  993,  252,  932,  851,  447,  434, 1008,  213,
+          255,  629,  903,  852,  646,  646,    6,  918,  254,  996,  194,  101,
+          152,  554,  409,  101,   81,  170,   43,  430,   15,  461,   43,  580,
+          274,  653,  343,  871,  594,  102,  112,  104,  334,  950,  191,   84,
+          385,  870,  456,  818,  335,  154,  987,   94,  210,  759,  918,  723,
+          743,  663,  432,  151,  457,  637,  477,  570,  727,  798,  469,  477,
+          828,  617,  460,  441]], device='cuda:0')
+ labels====> tensor([[735,  64, 463, 463, 874, 874, 286, 874, 463, 613, 813, 813, 813,   0,
+           0, 512, 512, 512, 546, 959, 484, 484,  30,  30, 610, 380, 610, 380,
+         797, 797, 797, 797, 797, 959, 546, 484, 329, 967, 505, 505, 512, 512,
+         512, 512, 675, 675, 915, 959, 116, 888, 116,  30, 116, 790, 790, 942,
+         790, 942, 942, 942, 942, 942,  79,  79, 793, 793, 679, 679, 652, 679,
+         696, 652, 652, 652, 652, 652, 655, 891, 655, 655, 655, 908, 908, 908,
+         204, 204, 204, 204, 204, 204, 204, 204, 204, 282, 282, 282, 282, 815,
+         845, 845, 845, 812, 812, 602, 658, 602, 742, 742, 645, 645, 645, 645,
+         645, 543, 866, 866, 645, 658, 658, 329, 658, 812, 161, 812, 812, 812,
+         812, 812, 812, 658, 658, 658,  30, 866, 352, 866, 543, 543, 352, 543,
+         352, 543, 553, 976,  59, 985, 985, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996,
+         996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996, 996]],
+       device='cuda:0')
+pred_pose_eval===>torch.Size([3, 196, 263])
+--> 	 Eva. ep 0 :, FID. 97.0205, Diversity Real. 10.4257, Diversity. 0.0000, R_precision_real. [0.33333333 0.33333333 1.        ], R_precision. [0.33333333 0.66666667 1.        ], matching_score_real. 10.11874262491862, matching_score_pred. 8.170096079508463
+--> --> 	 FID Improved from 100.00000 to 97.02046 !!!
+--> --> 	 matching_score Improved from 100.00000 to 8.17010 !!!
+--> --> 	 Diversity Improved from 100.00000 to 0.00000 !!!
+--> --> 	 Top1 Improved from 0.0000 to 0.3333 !!!
+--> --> 	 Top2 Improved from 0.0000 to 0.6667 !!!
+--> --> 	 Top3 Improved from 0.0000 to 1.0000 !!!
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it: 0-  49 niter:    50  1m 8s (- 26155m 4s) completed:  0%) loss: 5.0917  acc: 0.1260  lr: 0.0002
+ep/it: 0-  99 niter:   100  1m 35s (- 18279m 0s) completed:  0%) loss: 2.7632  acc: 0.3800  lr: 0.0002
+ep/it: 0- 149 niter:   150  2m 2s (- 15638m 50s) completed:  0%) loss: 2.1785  acc: 0.4636  lr: 0.0002
+ep/it: 0- 199 niter:   200  2m 30s (- 14404m 54s) completed:  0%) loss: 1.9193  acc: 0.5165  lr: 0.0002
+ep/it: 0- 249 niter:   250  2m 58s (- 13707m 54s) completed:  0%) loss: 1.7956  acc: 0.5416  lr: 0.0002
+ep/it: 0- 299 niter:   300  3m 26s (- 13170m 49s) completed:  0%) loss: 1.6795  acc: 0.5645  lr: 0.0002
+ep/it: 0- 349 niter:   350  3m 54s (- 12840m 2s) completed:  0%) loss: 1.6021  acc: 0.5824  lr: 0.0002
+ep/it: 1-  16 niter:   400  4m 27s (- 12823m 23s) completed:  0%) loss: 1.5738  acc: 0.5881  lr: 0.0002
+ep/it: 1-  66 niter:   450  4m 56s (- 12607m 37s) completed:  0%) loss: 1.5242  acc: 0.6018  lr: 0.0002
+ep/it: 1- 116 niter:   500  5m 24s (- 12409m 1s) completed:  0%) loss: 1.4936  acc: 0.6050  lr: 0.0002
+ep/it: 1- 166 niter:   550  5m 53s (- 12293m 12s) completed:  0%) loss: 1.4599  acc: 0.6135  lr: 0.0002
+ep/it: 1- 216 niter:   600  6m 19s (- 12109m 48s) completed:  0%) loss: 1.4483  acc: 0.6158  lr: 0.0002
+ep/it: 1- 266 niter:   650  6m 46s (- 11973m 36s) completed:  0%) loss: 1.4288  acc: 0.6223  lr: 0.0002
+ep/it: 1- 316 niter:   700  7m 14s (- 11871m 19s) completed:  0%) loss: 1.4177  acc: 0.6248  lr: 0.0002
+ep/it: 1- 366 niter:   750  7m 41s (- 11774m 50s) completed:  0%) loss: 1.4015  acc: 0.6279  lr: 0.0002
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 166, in train
+    loss, acc = self.update(batch_data=batch, mems=mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 99, in update
+    loss, acc = self.forward(batch_data, mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 93, in forward
+    ce_loss, acc, pred_id, output, logits, mems = self.transformotion(captions, code_idx[..., 0], m_lens, mems=mems)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion.py", line 198, in forward
+    ret, pred_hid = self.seqTransDecoderXL(is_generating, prompt_logits.unsqueeze(0), motion_ids.permute(1, 0), labels.permute(1, 0), *mems)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 621, in forward
+    hidden, new_mems = self._forward(is_generate, cond_emb, data, mems=mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 592, in _forward
+    self.r_r_bias, dec_attn_mask=dec_attn_mask, mems=mems_i)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 419, in forward
+    output = self.pos_ff(output)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/transformers/transformer_xl_decoder.py", line 140, in forward
+    output = self.layer_norm(inp + core_out)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/normalization.py", line 170, in forward
+    input, self.normalized_shape, self.weight, self.bias, self.eps)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/functional.py", line 2095, in layer_norm
+    torch.backends.cudnn.enabled)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/traceback.py", line 197, in format_stack
+    return format_list(extract_stack(f, limit=limit))
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/traceback.py", line 359, in extract
+    linecache.checkcache(filename)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/linecache.py", line 71, in checkcache
+    if mtime is None:
+KeyboardInterrupt

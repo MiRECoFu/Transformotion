@@ -1,0 +1,19 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it: 0-  49 niter:    50  0m 31s (- 12069m 20s) completed:  0%) loss: 4.6276  acc: 0.1725  lr: 0.0002
+ep/it: 0-  99 niter:   100  1m 0s (- 11679m 10s) completed:  0%) loss: 2.6320  acc: 0.3992  lr: 0.0002
+ep/it: 0- 149 niter:   150  1m 30s (- 11572m 26s) completed:  0%) loss: 2.1319  acc: 0.4741  lr: 0.0002
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 166, in train
+    loss, acc = self.update(batch_data=batch, mems=mems)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 102, in update
+    loss.backward()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt

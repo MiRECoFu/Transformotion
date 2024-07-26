@@ -1,0 +1,113 @@
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+motion motion_ids ========================+> tensor([[ 897,  929,  370,  ...,  613,  958,  848],
+        [  24,  143,  424,  ...,  913,  555,  276],
+        [  79,  239,  857,  ...,  819,  613,  965],
+        ...,
+        [ 927,  715,  461,  ...,  169,  279,  286],
+        [ 695,  790,  110,  ...,  904,  475,  749],
+        [ 692,  249,   36,  ..., 1003,  290,   56]], device='cuda:0')
+ labels====> tensor([[  13,   13,   13,  ...,  996,  996,  996],
+        [ 309,  286,  874,  ...,  310,  455,  378],
+        [ 912,  217,  217,  ...,  996,  996,  996],
+        ...,
+        [  64,   64,   93,  ...,  996,  996,  996],
+        [1009,   87,  612,  ...,  384,  323,  931],
+        [ 719,  719,  719,  ...,  996,  996,  996]], device='cuda:0')
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+--> 	 Eva. Ep 0 :, FID. 66.8567, Diversity Real. 15.6263, Diversity. 2.0697, R_precision_real. [0.015625 0.046875 0.046875], R_precision. [0.       0.       0.015625], matching_score_real. 9.04236888885498, matching_score_pred. 8.849748611450195
+--> --> 	 FID Improved from 100.00000 to 66.85669 !!!
+--> --> 	 matching_score Improved from 100.00000 to 8.84975 !!!
+--> --> 	 Diversity Improved from 100.00000 to 2.06972 !!!
+--> --> 	 Top3 Improved from 0.0000 to 0.0156 !!!
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+ep/it: 0-  49 niter:    50  1m 8s (- 26368m 41s) completed:  0%) loss: 6.4057  acc: 0.0135  lr: 0.0002
+ep/it: 0-  99 niter:   100  1m 40s (- 19181m 32s) completed:  0%) loss: 4.4594  acc: 0.1442  lr: 0.0002
+ep/it: 0- 149 niter:   150  2m 11s (- 16741m 12s) completed:  0%) loss: 3.4668  acc: 0.2279  lr: 0.0002
+ep/it: 0- 199 niter:   200  2m 42s (- 15524m 8s) completed:  0%) loss: 3.0808  acc: 0.2700  lr: 0.0002
+ep/it: 0- 249 niter:   250  3m 12s (- 14717m 30s) completed:  0%) loss: 2.8860  acc: 0.2922  lr: 0.0002
+ep/it: 0- 299 niter:   300  3m 43s (- 14260m 50s) completed:  0%) loss: 2.7446  acc: 0.3178  lr: 0.0002
+ep/it: 0- 349 niter:   350  4m 14s (- 13905m 21s) completed:  0%) loss: 2.7185  acc: 0.3139  lr: 0.0002
+pose=======+>pose.shape: torch.Size([64, 196, 263])
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 64), dtype=torch.int64)
+motion motion_ids ========================+> tensor([[136,  64,  64,  ...,  64,  64,  64],
+        [501, 267, 267,  ..., 994, 994, 994],
+        [208, 719, 719,  ..., 719, 719, 719],
+        ...,
+        [110, 719, 719,  ..., 365, 967, 512],
+        [912, 619, 619,  ..., 884, 884, 884],
+        [990, 990, 990,  ..., 345, 345, 345]], device='cuda:0')
+ labels====> tensor([[139, 289, 869,  ..., 293, 329, 967],
+        [382, 668, 197,  ..., 354, 354, 971],
+        [159,  63,  63,  ..., 658, 484, 959],
+        ...,
+        [ 28,  28,  28,  ...,  28,  28,  28],
+        [768, 276, 768,  ..., 611, 611, 611],
+        [798, 798, 874,  ..., 217, 159, 217]], device='cuda:0')
+alllllll=======+>all_pred_motions.shape: torch.Size([64, 196, 263])
+--> 	 Eva. Ep 1 :, FID. 8.1078, Diversity Real. 14.0583, Diversity. 8.7672, R_precision_real. [0.015625 0.015625 0.03125 ], R_precision. [0.       0.015625 0.015625], matching_score_real. 9.070615768432617, matching_score_pred. 9.499507904052734
+--> --> 	 FID Improved from 66.85669 to 8.10779 !!!
+--> --> 	 Diversity Improved from 2.06972 to 8.76718 !!!
+--> --> 	 Top2 Improved from 0.0000 to 0.0156 !!!
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 230, in saving
+    yield self
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 1152, in save
+    anim._draw_next_frame(d, blit=False)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 1192, in _draw_next_frame
+    self._draw_frame(framedata)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 1755, in _draw_frame
+    self._drawn_artists = self._func(framedata, *self._args)
+  File "/root/Transformotion/trainers/../utils/plot_script.py", line 406, in update
+    ax.set_yticklabels([])
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 3815, in set_yticklabels
+    minor=minor, **kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/axis.py", line 1723, in set_ticklabels
+    ticks = self.get_major_ticks()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/mpl_toolkits/mplot3d/axis3d.py", line 145, in get_major_ticks
+    ticks = maxis.XAxis.get_major_ticks(self, numticks)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/axis.py", line 1414, in get_major_ticks
+    self._copy_tick_props(self.majorTicks[0], tick)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/axis.py", line 1380, in _copy_tick_props
+    dest.tick1line.update_from(src.tick1line)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/lines.py", line 1352, in update_from
+    other._marker.get_fillstyle())
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/markers.py", line 243, in __init__
+    self.set_marker(marker)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/markers.py", line 316, in set_marker
+    self._recache()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/markers.py", line 249, in _recache
+    self._transform = IdentityTransform()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/transforms.py", line 1683, in __init__
+    def __init__(self, *args, **kwargs):
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 214, in train
+    plot_func=plot_eval, save_ckpt=True, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 555, in evaluation_mask_transformer
+    plot_func(data, save_dir, captions, lengths)
+  File "trainers/train_transformotion.py", line 38, in plot_t2m
+    plot_3d_motion(save_path, kinematic_chain, joint, title=caption, fps=20)
+  File "/root/Transformotion/trainers/../utils/plot_script.py", line 412, in plot_3d_motion
+    ani.save(save_path, fps=fps)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 1156, in save
+    writer.grab_frame(**savefig_kwargs)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 232, in saving
+    self.finish()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 367, in finish
+    self.cleanup()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/matplotlib/animation.py", line 411, in cleanup
+    self._proc.returncode, self._proc.args, out, err)
+subprocess.CalledProcessError: Command '['ffmpeg', '-f', 'rawvideo', '-vcodec', 'rawvideo', '-s', '1000x1000', '-pix_fmt', 'rgba', '-r', '20', '-loglevel', 'error', '-i', 'pipe:', '-vcodec', 'h264', '-pix_fmt', 'yuv420p', '-y', '/root/autodl-tmp/checkpoints/t2m/trm_xl_b64_d1024_726_clip_nh16_nl18_downt_1_o/animation/E0001/00.mp4']' returned non-zero exit status 255.

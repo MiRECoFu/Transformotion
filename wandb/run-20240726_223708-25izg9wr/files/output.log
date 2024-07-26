@@ -1,0 +1,54 @@
+Load model epoch:21 iterations:8426
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+motion motion_ids ========================+> tensor([[909, 909, 909, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735,
+         735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735, 735]],
+       device='cuda:0')
+ labels====> tensor([[691, 985, 789, 691, 691, 691, 691, 691, 798, 798, 874, 874, 874, 874,
+         620, 620, 620, 620, 874, 874, 874, 874, 988, 988, 988, 108, 947, 800,
+         350, 350, 350, 350, 350, 350, 350, 350, 350, 638, 350, 638, 638, 638,
+         638, 638, 638, 638, 638, 638, 763, 763, 763, 763, 763, 763, 763, 763,
+         763, 763, 763, 763, 763, 763, 763, 406, 406, 406, 406, 406, 406, 406,
+         406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406,
+         406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406, 406,
+         763, 763, 763, 763, 763, 406, 763, 763, 393, 763, 763, 763, 763, 800,
+         800, 800, 228, 228, 228, 228,  29,  36, 691, 954, 954, 954, 954, 463,
+         874, 874, 874, 976, 286, 286, 286, 620, 620, 874, 874, 874, 874, 691,
+          29, 719,  29, 691, 613,  36,  36,  36,  29, 217, 954,  29,  29, 789,
+         789, 954, 691, 691, 691, 798, 798, 798, 874, 620, 620, 309, 309, 620,
+         620, 463, 691, 719, 730, 730,  29, 988, 638, 638, 108, 638, 638, 638,
+         350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350]],
+       device='cuda:0')
+pred_pose_eval===>torch.Size([64, 196, 263])
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 633, in evaluation_transformer
+    et_pred, em_pred = eval_wrapper.get_co_embeddings(word_embeddings, pos_one_hots, sent_len, pred_pose_eval, pred_len)
+  File "/root/Transformotion/trainers/../models/t2m_eval_wrapper.py", line 77, in get_co_embeddings
+    motion_embedding = self.motion_encoder(movements, m_lens)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/Transformotion/trainers/../models/t2m_eval_modules.py", line 176, in forward
+    emb = pack_padded_sequence(input_embs, cap_lens, batch_first=True)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/utils/rnn.py", line 244, in pack_padded_sequence
+    _VF._pack_padded_sequence(input, lengths, batch_first)
+RuntimeError: Length of all samples has to be greater than 0, but found an element in 'lengths' that is <= 0

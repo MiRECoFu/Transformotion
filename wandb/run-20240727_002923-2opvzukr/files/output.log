@@ -1,0 +1,50 @@
+Total Epochs: 3000, Total Iters: 1149000
+Iters Per Epoch, Training: 0383, Validation: 023
+inp.size(0)====>tensor([], device='cuda:0', size=(0, 1), dtype=torch.int64)
+/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/nn/modules/container.py:435: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")
+Traceback (most recent call last):
+  File "trainers/train_transformotion.py", line 150, in <module>
+    trainer.train(train_loader, val_loader, eval_val_loader, eval_wrapper=eval_wrapper, plot_eval=plot_t2m)
+  File "/root/Transformotion/trainers/../models/transformers/transformotion_trainer.py", line 153, in train
+    plot_func=plot_eval, save_ckpt=False, save_anim=True
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/Transformotion/trainers/../utils/eval_t2m.py", line 652, in evaluation_transformer
+    temp_R = calculate_R_precision(et.cpu().numpy(), em.cpu().numpy(), top_k=3, sum_all=True)
+  File "/root/Transformotion/trainers/../utils/metrics.py", line 61, in calculate_R_precision
+    top_k_mat = calculate_top_k(argmax, top_k)
+  File "/root/Transformotion/trainers/../utils/metrics.py", line 51, in calculate_top_k
+    correct_vec = (correct_vec | bool_mat[:, i])
+IndexError: index 1 is out of bounds for axis 1 with size 1
+motion motion_ids ========================+> tensor([[ 890,  918,  369,  719,  203,  136,  618, 1014,   80,  212,  412,  591,
+          737,  696,  659,  987,  899,  951,   61,  884,  577,  992,  505,  991,
+          959,  245,  935,  974,  729,  458,  821,  279,  899,  732, 1002,  823,
+          710,  669,  982,  341,  378,  145,  144,  708,  405,  137,  576,  619,
+          937,  310,  499,  730,  941,  733,  959,  553,  799,  109,  414,  448,
+          388,   89,  247,  603,  101,  735,  941,  921,  929,  848,  839,  135,
+          653,   14,  654,  996,  770,  545,  101,  167,  657,  637,  957,   99,
+            9,  529, 1014,  381,  947,  461,  166,  831,  209, 1012,  520,  655,
+           37,  883,  733,  137,   21,  101,  710,  291,  445,  102,  755,  755,
+          518,  380,  968,  424,  133,  972,  360,  151,  343,  833,  580,  835,
+          888,  264,   50,  507,  220,  359,   87,  617,  423,  760,  164,  107,
+           99,  759,  385,  301, 1021,  899,  651,  995,  559,  145,  993,  748,
+          466,  899,  905,  852,    6,  294,  455,  415,  322,  326,  899,  446,
+          551,  537,  529,  122,  656,  628, 1020,  474,    4,  663,  509,  948,
+          213,  705,  812,  528,  461,  101,  697]], device='cuda:0')
+ labels====> tensor([[372, 147, 184, 653, 253, 263, 565, 565, 275, 348, 348,  71, 209, 690,
+         690, 690, 648, 604, 604, 277, 238, 814, 814, 633, 633, 633, 633, 635,
+         635, 565, 672, 565, 615, 275, 348, 348, 777, 348, 209, 777, 777, 690,
+         648, 648, 277, 277, 277, 648, 603, 231, 223, 653, 653, 653, 347, 710,
+         710, 309, 309, 309, 309, 309, 309, 309, 309, 620, 253, 253, 253, 253,
+         620, 463, 463, 726, 691, 691, 726, 726,  29,  36,  36,  36,  36, 237,
+         237, 849, 630,  37, 419, 703, 703, 985, 117, 468, 407, 517, 283, 626,
+         806, 806, 806, 806, 804, 806, 806, 630, 517, 517, 849, 517, 143, 703,
+         703, 985, 985, 703, 630, 407, 626, 201, 201, 806, 684, 684, 684, 806,
+         916, 916, 517,  37,  37, 517, 419,  59,  29, 710, 710, 730, 704, 463,
+         184, 184, 309, 309, 309, 253, 507, 263, 605, 253, 209, 209,  71,  71,
+         874, 286, 309, 710, 710, 726, 463, 264, 884, 884, 767, 767, 761, 761,
+         959, 613, 613, 613, 767, 463, 117, 985, 985, 629, 629, 255, 463, 184,
+         184, 184, 184, 184, 184, 620, 253, 999, 999, 999, 999, 999, 286, 463]],
+       device='cuda:0')
+pred_pose_eval===>torch.Size([1, 196, 263])

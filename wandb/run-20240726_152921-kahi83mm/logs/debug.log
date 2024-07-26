@@ -1,0 +1,40 @@
+2024-07-26 15:29:21,051 INFO    MainThread:6144 [wandb_setup.py:_flush():76] Current SDK version is 0.17.2
+2024-07-26 15:29:21,051 INFO    MainThread:6144 [wandb_setup.py:_flush():76] Configure stats pid to 6144
+2024-07-26 15:29:21,051 INFO    MainThread:6144 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-07-26 15:29:21,051 INFO    MainThread:6144 [wandb_setup.py:_flush():76] Loading settings from /root/Transformotion/wandb/settings
+2024-07-26 15:29:21,052 INFO    MainThread:6144 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-26 15:29:21,052 INFO    MainThread:6144 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-26 15:29:21,052 INFO    MainThread:6144 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'trainers/train_transformotion.py', 'program_abspath': '/root/Transformotion/trainers/train_transformotion.py', 'program': 'trainers/train_transformotion.py'}
+2024-07-26 15:29:21,052 INFO    MainThread:6144 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-26 15:29:21,052 INFO    MainThread:6144 [wandb_init.py:_log_setup():520] Logging user logs to /root/Transformotion/wandb/run-20240726_152921-kahi83mm/logs/debug.log
+2024-07-26 15:29:21,052 INFO    MainThread:6144 [wandb_init.py:_log_setup():521] Logging internal logs to /root/Transformotion/wandb/run-20240726_152921-kahi83mm/logs/debug-internal.log
+2024-07-26 15:29:21,053 INFO    MainThread:6144 [wandb_init.py:init():560] calling init triggers
+2024-07-26 15:29:21,053 INFO    MainThread:6144 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0002, 'epochs': 3000}
+2024-07-26 15:29:21,053 INFO    MainThread:6144 [wandb_init.py:init():610] starting backend
+2024-07-26 15:29:21,053 INFO    MainThread:6144 [wandb_init.py:init():614] setting up manager
+2024-07-26 15:29:21,058 INFO    MainThread:6144 [backend.py:_multiprocessing_setup():107] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-26 15:29:21,061 INFO    MainThread:6144 [wandb_init.py:init():622] backend started and connected
+2024-07-26 15:29:21,071 INFO    MainThread:6144 [wandb_init.py:init():711] updated telemetry
+2024-07-26 15:29:21,462 INFO    MainThread:6144 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-07-26 15:29:22,668 INFO    MainThread:6144 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-26 15:29:22,964 WARNING MainThread:6144 [wandb_init.py:init():1175] interrupted
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 1171, in init
+    return wi.init()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 793, in init
+    run._on_init()
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 2406, in _on_init
+    version_result = version_handle.wait(timeout=30)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/root/miniconda3/envs/transformotion/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2024-07-26 15:29:26,486 WARNING MsgRouterThr:6144 [router.py:message_loop():77] message_loop has been closed
