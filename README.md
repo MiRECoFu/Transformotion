@@ -1,2 +1,2 @@
-# Transformotion
-a GPT-based transformer model for motion generation
+#Mogo
+Motion only generate once by using RQ Hierarchical Causal Transformer
